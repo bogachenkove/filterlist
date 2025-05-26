@@ -19,7 +19,7 @@ $$script[src="https://cdn.tmads.xyz/"]
 !#endif
 
 ! REMOVEPARAM START
-$removeparam=/refs?(err?al)?[_=]/
+$removeparam=/refs?(err?al)?[_=]/,domain=~accounts.spotify.com
 $removeparam=/referralCode=/
 $removeparam=/startapp=/
 $removeparam=/tgWebAppStartParam=/
@@ -70,6 +70,7 @@ $removeparam=/affiliate\_id=/
 ||disquscdn.com^$important
 ||sharethis.com^$important
 ||uptolike.com^$important
+||ext-twitch.tv^$important
 ! DOMAINS END
 
 ! WHITELIST START
@@ -78,8 +79,6 @@ $removeparam=/affiliate\_id=/
 ! WHITELIST END
 
 ! BAD-FILTERS START
-@@||cmp.inmobi.com^|$badfilter
-@@||awin1.com^|$badfilter
 @@||pagead.l.doubleclick.net^|$badfilter
 @@||www.googleadservices.com^|$badfilter
 @@||track.rutarget.ru^|$badfilter
@@ -89,11 +88,10 @@ $removeparam=/affiliate\_id=/
 @@||googleadapis.l.google.com^|$badfilter
 @@||launches.appsflyer.com^|$badfilter
 @@||app.adjust.com^|$badfilter
-@@||dogefaucet.com^$generichide,badfilter
 ! BAD-FILTERS END
 
 ! BASIC FILTERS START
-/[_/-]ad[vs](er(ve)?t?(ise|ising|isement)?)?[_/-]?/
+/[_/-]ad[vs](er(ve)?t?(ise|ising|isement)?)?[_/-]?/$domain=~reddit.com|~twitch.tv
 ||null^
 ||undefined^
 ||ad.
@@ -119,6 +117,7 @@ $removeparam=/affiliate\_id=/
 ##[src^="//ad."]
 youtube.com##.ytp-endscreen-content,.attached-message,.sponsorThumbnailLabel,.ytp-paid-content-overlay
 twitch.tv##.default-panel>:not([href*="vk.com"]):not([href*="donationalerts."]):not([href*="instagram.com"]):not([href*="youtube.com"]):not([href*="twitter.com"]):not([href*="steamcommunity.com"]):not([href*="discord.gg"]):not([href*="facebook.com"])
+twitch.tv##[class*="extensions-dock"]
 tronscan.*##.token-picture-profit,.token-text-profit,.profit-box,.address-profit,.tron-icon-like,.profitSec,.noticeNews
 bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io,cardanoscan.io##[alt="Ads"],[id*="TextAd"],[id*="AdResult"],#my-banner-ad,.position-relative[target="_blank"],.noindex-section,#masterDivCookie,section.container-xxl > .py-4,form[action="/search"]+[class],#cookieConsentBanner
 bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io##section:style(background-image: none !important;)
@@ -152,10 +151,10 @@ youtube.com##.undefined > yt-button-shape
 ! SUBDOCUMENT END
 
 ! OTHER START
-||spotify.com/ad-logic/
-||spotify.com/ads/
-||yandex.ru/an/
-||yandex.ru/appcry|
+||spotify.com/ad-logic/$important
+||spotify.com/ads/$important
+||yandex.ru/an/$important
+||yandex.ru/appcry|$important
 ! OTHER END
 
 ! TRASH START
