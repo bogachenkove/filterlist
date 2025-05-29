@@ -91,7 +91,7 @@ $removeparam=/affiliate\_id=/
 ! BAD-FILTERS END
 
 ! BASIC FILTERS START
-/[_/-]ad[vs](er(ve)?t?(ise|ising|isement)?)?[_/-]?/$domain=~reddit.com|~twitch.tv
+/[_/-]ad[vs](er(ve)?t?(ise|ising|isement)?)?[_/-]?/$domain=~reddit.com|~twitch.tv|~deezer.com
 ||null^
 ||undefined^
 ||ad.
@@ -104,7 +104,7 @@ $removeparam=/affiliate\_id=/
 ||logs.
 ||logger.
 |http*:*?sentry_key=
-|http*:*?payload=
+|http*:*?payload=$domain=~krea.ai
 |http*:*?metrica_device_id=
 ! BASIC END START
 
@@ -115,7 +115,7 @@ $removeparam=/affiliate\_id=/
 ! COSMETIC RULES START
 ##[src^="//ads."]
 ##[src^="//ad."]
-youtube.com##.ytp-endscreen-content,.attached-message,.sponsorThumbnailLabel,.ytp-paid-content-overlay
+youtube.com##.ytp-endscreen-content,.attached-message,.sponsorThumbnailLabel,.ytp-paid-content-overlay,.undefined > yt-button-shape
 twitch.tv##.default-panel>:not([href*="vk.com"]):not([href*="donationalerts."]):not([href*="instagram.com"]):not([href*="youtube.com"]):not([href*="twitter.com"]):not([href*="steamcommunity.com"]):not([href*="discord.gg"]):not([href*="facebook.com"])
 twitch.tv##[class*="extensions-dock"]
 tronscan.*##.token-picture-profit,.token-text-profit,.profit-box,.address-profit,.tron-icon-like,.profitSec,.noticeNews
@@ -130,7 +130,6 @@ cardanoscan.io##body > .relative,.relative > [href] > .absolute
 coinmarketcap.com##.coin-ad-banner
 blockchair.com##.buggy-chat,.okane-top,.extension-widget
 blockchair.com##.flow>:has-text(/Advertise here|Turn off ads|Sponsored/)
-youtube.com##.undefined > yt-button-shape
 ! COSMETIC RULES END
 
 ! CONTENT SECURITY POLICY START
