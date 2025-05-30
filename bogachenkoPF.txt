@@ -91,7 +91,7 @@ $removeparam=/affiliate\_id=/
 ! BAD-FILTERS END
 
 ! BASIC FILTERS START
-/[_/-]ad[vs](er(ve)?t?(ise|ising|isement)?)?[_/-]?/$domain=~reddit.com|~twitch.tv|~deezer.com
+/[_/-]ad[vs](er(ve)?t?(ise|ising|isement)?)?[_/-]?/$domain=~reddit.com|~twitch.tv|~deezer.com|~yandex.*
 ||null^
 ||undefined^
 ||ad.
@@ -116,8 +116,8 @@ $removeparam=/affiliate\_id=/
 ##[src^="//ads."]
 ##[src^="//ad."]
 youtube.com##.ytp-endscreen-content,.attached-message,.sponsorThumbnailLabel,.ytp-paid-content-overlay,.undefined > yt-button-shape
-twitch.tv##.default-panel>:not([href*="vk.com"]):not([href*="donationalerts."]):not([href*="instagram.com"]):not([href*="youtube.com"]):not([href*="twitter.com"]):not([href*="steamcommunity.com"]):not([href*="discord.gg"]):not([href*="facebook.com"])
-twitch.tv##[class*="extensions-dock"]
+twitch.tv##.default-panel>[class]:not([href*="vk.com"]):not([href*="donat"]):not([href*="instagram.com"]):not([href*="youtube.com"]):not([href*="twitter.com"]):not([href*="steamcommunity.com"]):not([href*="discord.gg"]):not([href*="facebook.com"]):not([href*="twitch.tv"]):not([href*="t.me"]):not([href*="tiktok.com"]):not([href*="boosty.to"]):not([href*="google.com"])
+twitch.tv##[class*="extensions-dock"],[class*="giftExpirationCallout"]
 tronscan.*##.token-picture-profit,.token-text-profit,.profit-box,.address-profit,.tron-icon-like,.profitSec,.noticeNews
 bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io,cardanoscan.io##[alt="Ads"],[id*="TextAd"],[id*="AdResult"],#my-banner-ad,.position-relative[target="_blank"],.noindex-section,#masterDivCookie,section.container-xxl > .py-4,form[action="/search"]+[class],#cookieConsentBanner
 bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io##section:style(background-image: none !important;)
@@ -154,10 +154,12 @@ blockchair.com##.flow>:has-text(/Advertise here|Turn off ads|Sponsored/)
 ||spotify.com/ads/$important
 ||yandex.ru/an/$important
 ||yandex.ru/appcry|$important
+||yandex.ru/ads/$important
 ! OTHER END
 
 ! TRASH START
 ||lucky-gift.org^
+||tel1mekar.com^
 ||2ch.hk/static/js/events/chikatilo.js$script
 ||2ch.hk/static/js/events/snow_miner_anon_ne_podozrevaet.js$script
 ! TRASH END
