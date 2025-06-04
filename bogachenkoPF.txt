@@ -92,6 +92,7 @@ $removeparam=/affiliate\_id=/
 
 ! BASIC FILTERS START
 /[_/-]ad[vs](er(ve)?t?(ise|ising|isement)?)?[_/-]?/$domain=~reddit.com|~twitch.tv|~deezer.com|~yandex.*
+/\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 ||null^
 ||undefined^
 ||ad.
@@ -130,6 +131,7 @@ cardanoscan.io##body > .relative,.relative > [href] > .absolute
 coinmarketcap.com##.coin-ad-banner
 blockchair.com##.buggy-chat,.okane-top,.extension-widget
 blockchair.com##.flow>:has-text(/Advertise here|Turn off ads|Sponsored/)
+vk.com##.videoplayer_overlay_btn_container
 ! COSMETIC RULES END
 
 ! CONTENT SECURITY POLICY START
@@ -151,15 +153,30 @@ blockchair.com##.flow>:has-text(/Advertise here|Turn off ads|Sponsored/)
 
 ! OTHER START
 ||spotify.com/ad-logic/$important
-||spotify.com/ads/$important
 ||yandex.ru/an/$important
 ||yandex.ru/appcry|$important
-||yandex.ru/ads/$important
+/\.[a-z]{2,3}\/ads\//$important
 ! OTHER END
 
 ! TRASH START
 ||lucky-gift.org^
 ||tel1mekar.com^
+||xuv.etherscan.com^
+||ban.etherscan.com^
+||eas.etherscan.com^
+bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,scrollscan.com##[id*="wrapper-sevio-"]
+bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,scrollscan.com##.card > div:has-text(/Sponsored/)
+bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,gnosisscan.io,cronoscan.com,moonscan.io,celoscan.io,blastscan.io,mantlescan.xyz,scrollscan.com,berascan.com##.card > [class*="opacity"]
+basescan.org,scrollscan.com##[class*="muted"]:has-text(/Sponsored|Featured/)
+basescan.org,scrollscan.com##[id*="AdResult"]
+basescan.org##.scrollbar-custom:has([alt="Ads"])
+basescan.org##.text-muted:has([src*="xuv.etherscan"])
+polygonscan.com##.text-muted:has([src*="ban.etherscan"])
+scrollscan.com##.text-muted:has([src*="eas.etherscan"])
+/\/([a-z0-9]{7}\/){2}/$script,domain=ebalovo.*
+spotify.com##div.ReactModalPortal
+twitch.tv##[class*="bits-leaderboard"],[class*="channel-leaderboard-header"]
+twitch.tv##.chat-room__content > :has([aria-label="Развернуть рейтинг лучших дарителей в верхней части чата"])
 ||2ch.hk/static/js/events/chikatilo.js$script
 ||2ch.hk/static/js/events/snow_miner_anon_ne_podozrevaet.js$script
 ! TRASH END
