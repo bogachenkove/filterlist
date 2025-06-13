@@ -55,6 +55,8 @@
 0.0.0.0 www.googletagmanager.com
 0.0.0.0 safebrowsing.googleapis.com
 0.0.0.0 pubads.g.doubleclick.net
+0.0.0.0 fundingchoicesmessages.google.com
+0.0.0.0 xgapromomanager-pa.googleapis.com
 
 # [whatsapp.com]
 0.0.0.0 dit.whatsapp.net
@@ -129,6 +131,9 @@
 0.0.0.0 tracking.rus.miui.com
 0.0.0.0 www.cdn.ad.xiaomi.com
 
+# [huawei.com]
+0.0.0.0 datacollector-drru.dt.dbankcloud.ru
+
 # [mozilla.org]
 0.0.0.0 incoming.telemetry.mozilla.org
 0.0.0.0 probes.telemetry.mozilla.org
@@ -190,6 +195,10 @@
 0.0.0.0 ts.tracker-api.my.com
 
 # [appsflyer.com]
+0.0.0.0 ogcvzt-cdn-settings.appsflyersdk.com
+0.0.0.0 4mqwof-cdn-settings.appsflyersdk.com
+0.0.0.0 ogcvzt-launches.appsflyersdk.com
+0.0.0.0 srrspa-inapps.appsflyersdk.com
 0.0.0.0 3bjjlx-cdn-settings.appsflyersdk.com
 0.0.0.0 3bjjlx-inapps.appsflyersdk.com
 0.0.0.0 3bjjlx-launches.appsflyersdk.com
@@ -222,6 +231,9 @@
 0.0.0.0 trheoi-conversions.appsflyersdk.com
 0.0.0.0 trheoi-dlsdk.appsflyersdk.com
 0.0.0.0 w8nbds-cdn-settings.appsflyersdk.com
+0.0.0.0 ih4bsf-cdn-settings.appsflyersdk.com
+0.0.0.0 b90zwg-cdn-settings.appsflyersdk.com
+0.0.0.0 websdk.appsflyer.com
 
 # [branch.io]
 0.0.0.0 api.branch.io
@@ -299,7 +311,10 @@
 0.0.0.0 ts.acestream.net
 
 # [sentry.io]
+0.0.0.0 getsentry.com
 0.0.0.0 app.getsentry.com
+0.0.0.0 us.sentry.io
+0.0.0.0 ingest.us.sentry.io
 0.0.0.0 browser.sentry-cdn.com
 0.0.0.0 ingest.sentry.io
 0.0.0.0 o118392.ingest.sentry.io
@@ -308,7 +323,9 @@
 0.0.0.0 o22381.ingest.sentry.io
 0.0.0.0 o439907.ingest.sentry.io
 0.0.0.0 o529943.ingest.sentry.io
+0.0.0.0 o4506773172649984.ingest.us.sentry.io
 0.0.0.0 sentry-cdn.com
+0.0.0.0 o1069899.ingest.sentry.io
 0.0.0.0 sentry.io
 
 # [adjust.com]
@@ -346,6 +363,7 @@
 0.0.0.0 rs.mail.ru
 0.0.0.0 top-fwz1.mail.ru
 0.0.0.0 xray.mail.ru
+0.0.0.0 api-hprof.odkl.ru
 
 # [vk.com]
 0.0.0.0 stats.vk-portal.net
@@ -353,6 +371,9 @@
 0.0.0.0 ip4.tracker-api.vk-analytics.ru
 0.0.0.0 ip6.tracker-api.vk-analytics.ru
 0.0.0.0 ts.tracker-api.vk-analytics.ru
+
+# [reddit.com]
+0.0.0.0 w3-reporting.reddit.com
 
 # [criteo.com]
 0.0.0.0 criteo.com
@@ -427,6 +448,7 @@
 0.0.0.0 amplitude.com
 0.0.0.0 api.amplitude.com
 0.0.0.0 api2.amplitude.com
+0.0.0.0 cdn.amplitude.com
 
 # [relap.io]
 0.0.0.0 relap.io
@@ -722,3 +744,37 @@
 
 # [api.mixpanel.com]
 0.0.0.0 api.mixpanel.com
+
+# [magsrv.com]
+0.0.0.0 magsrv.com
+0.0.0.0 a.magsrv.com
+0.0.0.0 s.magsrv.com
+
+# [apptracer.ru]
+0.0.0.0 sdk-api.apptracer.ru
+0.0.0.0 apptracer.ru
+
+# [rustore.ru]
+0.0.0.0 ads.rustore.ru
+0.0.0.0 stats.rustore.ru
+
+# [adriver.ru]
+0.0.0.0 adriver.ru
+0.0.0.0 ad.adriver.ru
+
+# [go-mpulse.net]
+0.0.0.0 s.go-mpulse.net
+0.0.0.0 go-mpulse.net
+
+# [bybit.com]
+0.0.0.0 monitor-frontend-collector.a.bybit-aws.com
+
+# [diginetica.net]
+0.0.0.0 tracking-app.diginetica.net
+0.0.0.0 diginetica.net
+
+# [kaspersky.com]
+0.0.0.0 ksn-a-stat-geo.kaspersky-labs.com
+0.0.0.0 ksn-ml-geo.kaspersky-labs.com
+0.0.0.0 kaspersky.com
+0.0.0.0 kaspersky-labs.com

@@ -71,6 +71,8 @@ $removeparam=/affiliate\_id=/
 ||sharethis.com^$important
 ||uptolike.com^$important
 ||ext-twitch.tv^$important
+||kaspersky-labs.com^$important
+||kaspersky.com^$important
 ! DOMAINS END
 
 ! WHITELIST START
@@ -91,8 +93,10 @@ $removeparam=/affiliate\_id=/
 ! BAD-FILTERS END
 
 ! BASIC FILTERS START
-/[_/-]ad[vs](er(ve)?t?(ise|ising|isement)?)?[_/-]?/$domain=~reddit.com|~twitch.tv|~deezer.com|~yandex.*
+/(?=(?:.*?&(manufacturer|(build[-_])?model|(device|partner|referrer|app|client)[-_]?id|uuid|app_(platform|store|_version_name)|am_(version_name|app))=){4,})/
+/[_/-]ad[vs](er(ve)?t?(ise|ising|isement)?)?[?_/-]/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
+/[_/-]promos?(t(ed?|i(ng|ons?)))[?_/-]/
 ||null^
 ||undefined^
 ||ad.
@@ -104,8 +108,9 @@ $removeparam=/affiliate\_id=/
 ||log.
 ||logs.
 ||logger.
+||sentry.
 |http*:*?sentry_key=
-|http*:*?payload=$domain=~krea.ai
+|http*:*?payload=
 |http*:*?metrica_device_id=
 ! BASIC END START
 
@@ -120,7 +125,7 @@ youtube.com##.ytp-endscreen-content,.attached-message,.sponsorThumbnailLabel,.yt
 twitch.tv##.default-panel>[class]:not([href*="vk.com"]):not([href*="donat"]):not([href*="instagram.com"]):not([href*="youtube.com"]):not([href*="twitter.com"]):not([href*="steamcommunity.com"]):not([href*="discord.gg"]):not([href*="facebook.com"]):not([href*="twitch.tv"]):not([href*="t.me"]):not([href*="tiktok.com"]):not([href*="boosty.to"]):not([href*="google.com"])
 twitch.tv##[class*="extensions-dock"],[class*="giftExpirationCallout"]
 tronscan.*##.token-picture-profit,.token-text-profit,.profit-box,.address-profit,.tron-icon-like,.profitSec,.noticeNews
-bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io,cardanoscan.io##[alt="Ads"],[id*="TextAd"],[id*="AdResult"],#my-banner-ad,.position-relative[target="_blank"],.noindex-section,#masterDivCookie,section.container-xxl > .py-4,form[action="/search"]+[class],#cookieConsentBanner
+bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io,cardanoscan.io##[alt="Ads"],[id*="TextAd"],[id*="AdResult"],#my-banner-ad,.position-relative[target="_blank"],.noindex-section,#masterDivCookie,section.container-xxl > .py-4,form[action="/search"]+[class],#cookieConsentBanner,#masterNoticeBar
 bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io##section:style(background-image: none !important;)
 bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io##.justify-content-between.flex-wrap > div.d-flex:last-child
 bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io##div:has(>.search-panel-ads)
@@ -155,15 +160,18 @@ vk.com##.videoplayer_overlay_btn_container
 ||spotify.com/ad-logic/$important
 ||yandex.ru/an/$important
 ||yandex.ru/appcry|$important
-/\.[a-z]{2,3}\/ads\//$important
+||yandex.ru/clck/click|$important
+||yandex.net/*/experiments/$important
 ! OTHER END
 
 ! TRASH START
+@@|http*:*?payload=$domain=krea.ai
 ||lucky-gift.org^
 ||tel1mekar.com^
 ||xuv.etherscan.com^
 ||ban.etherscan.com^
 ||eas.etherscan.com^
+||bidajet.info^
 bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,scrollscan.com##[id*="wrapper-sevio-"]
 bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,scrollscan.com##.card > div:has-text(/Sponsored/)
 bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,gnosisscan.io,cronoscan.com,moonscan.io,celoscan.io,blastscan.io,mantlescan.xyz,scrollscan.com,berascan.com##.card > [class*="opacity"]
