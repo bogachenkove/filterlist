@@ -180,6 +180,9 @@
 0.0.0.0 u.startup.mobile.webvisor.com
 0.0.0.0 webvisor.com
 0.0.0.0 media-adv.market.yandex.ru
+0.0.0.0 app.uaas.yandex.ru
+0.0.0.0 media-adv.vs.market.yandex.net
+0.0.0.0 market-click-baobab.yandex.ru
 
 # [my.com]
 0.0.0.0 eu.tracker-api.my.com
@@ -411,6 +414,7 @@
 # [scorecardresearch.com]
 0.0.0.0 sb.scorecardresearch.com
 0.0.0.0 udm.scorecardresearch.com
+0.0.0.0 census-app.scorecardresearch.com
 0.0.0.0 www.scorecardresearch.com
 
 # [tns-counter.ru]
@@ -778,3 +782,31 @@
 0.0.0.0 ksn-ml-geo.kaspersky-labs.com
 0.0.0.0 kaspersky.com
 0.0.0.0 kaspersky-labs.com
+0.0.0.0 s19.upd.kaspersky.com
+0.0.0.0 s18.upd.kaspersky.com
+0.0.0.0 s17.upd.kaspersky.com
+0.0.0.0 s16.upd.kaspersky.com
+0.0.0.0 s15.upd.kaspersky.com
+0.0.0.0 s14.upd.kaspersky.com
+0.0.0.0 s13.upd.kaspersky.com
+0.0.0.0 s12.upd.kaspersky.com
+0.0.0.0 s11.upd.kaspersky.com
+0.0.0.0 s10.upd.kaspersky.com
+0.0.0.0 s09.upd.kaspersky.com
+0.0.0.0 s08.upd.kaspersky.com
+0.0.0.0 s07.upd.kaspersky.com
+0.0.0.0 s06.upd.kaspersky.com
+0.0.0.0 s05.upd.kaspersky.com
+0.0.0.0 s04.upd.kaspersky.com
+0.0.0.0 s03.upd.kaspersky.com
+0.0.0.0 s02.upd.kaspersky.com
+0.0.0.0 s01.upd.kaspersky.com
+0.0.0.0 s00.upd.kaspersky.com
+0.0.0.0 downloads.upd.kaspersky.com
+0.0.0.0 dc1-cert.ksn.kaspersky-labs.com
+0.0.0.0 dc1-cf.ksn.kaspersky-labs.com
+0.0.0.0 dc1-pp.ksn.kaspersky-labs.com
+0.0.0.0 dc1-ml.ksn.kaspersky-labs.com
+0.0.0.0 ksn-crypto-catm-geo.kaspersky-labs.com
+0.0.0.0 ksn-cinfo-geo.kaspersky-labs.com
+0.0.0.0 ksn-ca-geo.kaspersky-labs.com

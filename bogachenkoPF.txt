@@ -161,7 +161,7 @@ vk.com##.videoplayer_overlay_btn_container
 ||yandex.ru/an/$important
 ||yandex.ru/appcry|$important
 ||yandex.ru/clck/click|$important
-||yandex.net/*/experiments/$important
+||yandex.net/*/experiments$important
 ! OTHER END
 
 ! TRASH START
