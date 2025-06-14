@@ -93,7 +93,7 @@ $removeparam=/affiliate\_id=/
 ! BAD-FILTERS END
 
 ! BASIC FILTERS START
-/(?=(?:.*?&(manufacturer|(build[-_])?model|(device|partner|referrer|app|client)[-_]?id|uuid|app_(platform|store|_version_name)|am_(version_name|app))=){4,})/
+/(?=(?:.*?&(manufacturer|(build[-_])?model|platform|(device|partner|referrer|app|client)[-_]?id|uuid|app_(platform|store|_version_name)|am_(version_name|app))=){3,})/
 /[_/-]ad[vs](er(ve)?t?(ise|ising|isement)?)?[?_/-]/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 /[_/-]promos?(t(ed?|i(ng|ons?)))[?_/-]/
@@ -112,7 +112,12 @@ $removeparam=/affiliate\_id=/
 |http*:*?sentry_key=
 |http*:*?payload=
 |http*:*?metrica_device_id=
+|http*:*/ads|
 ! BASIC END START
+
+! APPS START
+||mail.ru^$app=ru.vk.store
+! APPS END
 
 ! IMAGES START
 /^https?:\/\/yastatic\.net\/www\/_\/[^\s]{150,}/$image,important
@@ -147,9 +152,7 @@ vk.com##.videoplayer_overlay_btn_container
 ! CONTENT SECURITY POLICY END
 
 ! SCRIPT START
-*/endscreen.js$script,domain=youtube.com|youtu.be|youtube-nocookie.com
-*/js/libs/coinzilla.js$script
-||yastatic.net/share$script
+|http*:*/endscreen.js$script,domain=youtube.com|youtu.be|youtube-nocookie.com
 ! SCRIPT END
 
 ! SUBDOCUMENT START
@@ -158,10 +161,16 @@ vk.com##.videoplayer_overlay_btn_container
 
 ! OTHER START
 ||spotify.com/ad-logic/$important
+||spotify.com/sponsoredplaylist/$important
 ||yandex.ru/an/$important
 ||yandex.ru/appcry|$important
 ||yandex.ru/clck/click|$important
 ||yandex.net/*/experiments$important
+||yandex.net/report|$important
+||yandex.net/graphql|$important
+||yandex.ru/*/welcome-features|$important
+||api.browser.yandex.ru/uma_proto|$important
+||yandex.ru/*/metrics|$important
 ! OTHER END
 
 ! TRASH START
@@ -175,6 +184,7 @@ vk.com##.videoplayer_overlay_btn_container
 bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,scrollscan.com##[id*="wrapper-sevio-"]
 bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,scrollscan.com##.card > div:has-text(/Sponsored/)
 bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,gnosisscan.io,cronoscan.com,moonscan.io,celoscan.io,blastscan.io,mantlescan.xyz,scrollscan.com,berascan.com##.card > [class*="opacity"]
+translate.yandex.ru###textbox > .ya-gpt-container,.social-links
 basescan.org,scrollscan.com##[class*="muted"]:has-text(/Sponsored|Featured/)
 basescan.org,scrollscan.com##[id*="AdResult"]
 basescan.org##.scrollbar-custom:has([alt="Ads"])
@@ -187,4 +197,5 @@ twitch.tv##[class*="bits-leaderboard"],[class*="channel-leaderboard-header"]
 twitch.tv##.chat-room__content > :has([aria-label="Развернуть рейтинг лучших дарителей в верхней части чата"])
 ||2ch.hk/static/js/events/chikatilo.js$script
 ||2ch.hk/static/js/events/snow_miner_anon_ne_podozrevaet.js$script
+||yastatic.net/share$script
 ! TRASH END

@@ -328,6 +328,8 @@
 0.0.0.0 o529943.ingest.sentry.io
 0.0.0.0 o4506773172649984.ingest.us.sentry.io
 0.0.0.0 sentry-cdn.com
+0.0.0.0 o4507686279512064.ingest.us.sentry.io
+0.0.0.0 o124216.ingest.sentry.io
 0.0.0.0 o1069899.ingest.sentry.io
 0.0.0.0 sentry.io
 
@@ -407,6 +409,7 @@
 0.0.0.0 countess.twitch.tv
 0.0.0.0 edge.ads.twitch.tv
 0.0.0.0 spade.twitch.tv
+0.0.0.0 player.stats.live-video.net
 
 # [shazam.com]
 0.0.0.0 beacon.shazam.com
@@ -549,6 +552,7 @@
 0.0.0.0 rttr2.zaycev.net
 
 # [mts.ru]
+0.0.0.0 api.a.mts.ru
 0.0.0.0 msdk.rtb.mts.ru
 0.0.0.0 mtsopros.mts.ru
 
@@ -810,3 +814,9 @@
 0.0.0.0 ksn-crypto-catm-geo.kaspersky-labs.com
 0.0.0.0 ksn-cinfo-geo.kaspersky-labs.com
 0.0.0.0 ksn-ca-geo.kaspersky-labs.com
+0.0.0.0 ksn-crypto-dnscheck-geo.kaspersky-labs.com
+0.0.0.0 dc1-st.ksn.kaspersky-labs.com
+0.0.0.0 dc1-file.ksn.kaspersky-labs.com
+
+# [tonkeeper.com]
+0.0.0.0 anonymous-analytics.tonkeeper.com
