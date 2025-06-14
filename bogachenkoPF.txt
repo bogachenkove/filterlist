@@ -93,7 +93,8 @@ $removeparam=/affiliate\_id=/
 ! BAD-FILTERS END
 
 ! BASIC FILTERS START
-/(?=(?:.*?&(manufacturer|(build[-_])?model|platform|(device|partner|referrer|app|client)[-_]?id|uuid|app_(platform|store|_version_name)|am_(version_name|app))=){3,})/
+/(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid)=){3,})/
+/(?=.*&uuid=)(?=(?:.*?&app(?:Platform|Version|Name){1,3}=){2,})/
 /[_/-]ad[vs](er(ve)?t?(ise|ising|isement)?)?[?_/-]/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 /[_/-]promos?(t(ed?|i(ng|ons?)))[?_/-]/
@@ -164,7 +165,7 @@ vk.com##.videoplayer_overlay_btn_container
 ||spotify.com/sponsoredplaylist/$important
 ||yandex.ru/an/$important
 ||yandex.ru/appcry|$important
-||yandex.ru/clck/click|$important
+||yandex.ru/clck/click$important
 ||yandex.net/*/experiments$important
 ||yandex.net/report|$important
 ||yandex.net/graphql|$important

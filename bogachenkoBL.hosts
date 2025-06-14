@@ -183,6 +183,8 @@
 0.0.0.0 app.uaas.yandex.ru
 0.0.0.0 media-adv.vs.market.yandex.net
 0.0.0.0 market-click-baobab.yandex.ru
+0.0.0.0 events.plus.yandex.net
+0.0.0.0 api.events.plus.yandex.net
 
 # [my.com]
 0.0.0.0 eu.tracker-api.my.com
