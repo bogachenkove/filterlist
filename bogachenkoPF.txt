@@ -94,26 +94,17 @@ $removeparam=/affiliate_id=/
 
 ! BASIC FILTERS START
 /(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid)=){3,})/
-/(?<=^|[&?/=_-])ad[vsx]?(er(v?e?)?t?(i(si)?ng|se(ment)?)?)?(?=$|[&?/=_-])/
+/(?<=^|[&?/.=_-])ad[vsx]?(er(v?e?)?t?(i(si)?ng|se(ment)?)?)?(?=$|[&?/.=_-])/
+/(?<=^|[&?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[&?/.=_-])/
+/(?<=^|[&?/.=_-])promos?(t(ed?|i(ng|ons?)))?(?=$|[&?/.=_-])/
+/(?<=^|[&?/.=_-])log(ger|s)?(?=$|[&?/.=_-])/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
-/[_/-]promos?(t(ed?|i(ng|ons?)))[?_/-]/
 ||null^
 ||undefined^
-||ad.
-||ads.
-||adv.
-||advertise.
-||advertising.
 ||vast.
-||log.
-||logs.
-||logger.
 ||sentry.
 |http*:*?sentry_key=
 |http*:*?payload=
-|http*:*?metrica_device_id=
-|http*:*/log?
-|http*:*/log-
 ! BASIC END START
 
 ! APPS START
@@ -157,7 +148,6 @@ vk.com##.videoplayer_overlay_btn_container
 ! SCRIPT END
 
 ! OTHER START
-||spotify.com/ad-logic/$important
 ||spotify.com/sponsoredplaylist/$important
 ||yandex.ru/an/$important
 ||yandex.ru/appcry|$important
@@ -167,7 +157,6 @@ vk.com##.videoplayer_overlay_btn_container
 ||yandex.net/graphql|$important
 ||yandex.ru/*/welcome-features|$important
 ||api.browser.yandex.ru/uma_proto|$important
-||yandex.ru/*/metrics|$important
 ! OTHER END
 
 ! TRASH START
@@ -178,6 +167,7 @@ vk.com##.videoplayer_overlay_btn_container
 ||ban.etherscan.com^
 ||eas.etherscan.com^
 ||bidajet.info^
+eda.yandex.ru##[style="height: calc(-16px + 33.3333vw);"],[style="width: calc(-32px + 100vw); height: calc(-17.9978px + 56.243vw);"],[style="margin-bottom: 24px; height: calc(-13.3333px + 41.6667vw);"]
 bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,scrollscan.com##[id*="wrapper-sevio-"]
 bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,scrollscan.com##.card > div:has-text(/Sponsored/)
 bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,gnosisscan.io,cronoscan.com,moonscan.io,celoscan.io,blastscan.io,mantlescan.xyz,scrollscan.com,berascan.com##.card > [class*="opacity"]

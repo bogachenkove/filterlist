@@ -186,6 +186,8 @@
 0.0.0.0 events.plus.yandex.net
 0.0.0.0 api.events.plus.yandex.net
 0.0.0.0 browser-updater.yandex.net
+0.0.0.0 banners.mobile.yandex.net
+0.0.0.0 banners-slb.mobile.yandex.net
 
 # [my.com]
 0.0.0.0 eu.tracker-api.my.com
@@ -334,6 +336,7 @@
 0.0.0.0 sentry-cdn.com
 0.0.0.0 o4507686279512064.ingest.us.sentry.io
 0.0.0.0 o124216.ingest.sentry.io
+0.0.0.0 o1377931.ingest.sentry.io
 0.0.0.0 o1069899.ingest.sentry.io
 0.0.0.0 sentry.io
 
@@ -653,6 +656,8 @@
 
 # [segment.com]
 0.0.0.0 segment.com
+0.0.0.0 segment.io
+0.0.0.0 cdn.segment.com
 0.0.0.0 cdn-settings.segment.com
 
 # [buzzoola.com]
@@ -826,3 +831,7 @@
 
 # [tonkeeper.com]
 0.0.0.0 anonymous-analytics.tonkeeper.com
+
+# [usabilla.com]
+0.0.0.0 api.usabilla.com
+0.0.0.0 w.usabilla.com
