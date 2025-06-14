@@ -185,6 +185,7 @@
 0.0.0.0 market-click-baobab.yandex.ru
 0.0.0.0 events.plus.yandex.net
 0.0.0.0 api.events.plus.yandex.net
+0.0.0.0 browser-updater.yandex.net
 
 # [my.com]
 0.0.0.0 eu.tracker-api.my.com
@@ -200,6 +201,7 @@
 0.0.0.0 ts.tracker-api.my.com
 
 # [appsflyer.com]
+0.0.0.0 ih4bsf-launches.appsflyersdk.com
 0.0.0.0 ogcvzt-cdn-settings.appsflyersdk.com
 0.0.0.0 4mqwof-cdn-settings.appsflyersdk.com
 0.0.0.0 ogcvzt-launches.appsflyersdk.com

@@ -29,7 +29,7 @@ $removeparam=/startapp=/
 $removeparam=/idUser=/
 $removeparam=/tgid=/
 $removeparam=/channelid=/
-$removeparam=/affiliate\_id=/
+$removeparam=/affiliate_id=/
 ! REMOVEPARAM END
 
 ! DOMAINS START
@@ -94,7 +94,7 @@ $removeparam=/affiliate\_id=/
 
 ! BASIC FILTERS START
 /(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid)=){3,})/
-/[_/-]ad[vs](er(ve)?t?(ise|ising|isement)?)?[?_/-]/
+/(?<=^|[&?/=_-])ad[vsx]?(er(v?e?)?t?(i(si)?ng|se(ment)?)?)?(?=$|[&?/=_-])/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 /[_/-]promos?(t(ed?|i(ng|ons?)))[?_/-]/
 ||null^
@@ -112,7 +112,8 @@ $removeparam=/affiliate\_id=/
 |http*:*?sentry_key=
 |http*:*?payload=
 |http*:*?metrica_device_id=
-|http*:*/ads|
+|http*:*/log?
+|http*:*/log-
 ! BASIC END START
 
 ! APPS START
@@ -154,10 +155,6 @@ vk.com##.videoplayer_overlay_btn_container
 ! SCRIPT START
 |http*:*/endscreen.js$script,domain=youtube.com|youtu.be|youtube-nocookie.com
 ! SCRIPT END
-
-! SUBDOCUMENT START
-||accounts.google.com/gsi/$subdocument,third-party
-! SUBDOCUMENT END
 
 ! OTHER START
 ||spotify.com/ad-logic/$important
