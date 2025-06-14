@@ -557,6 +557,8 @@
 0.0.0.0 api.a.mts.ru
 0.0.0.0 msdk.rtb.mts.ru
 0.0.0.0 mtsopros.mts.ru
+0.0.0.0 static.a.mts.ru
+0.0.0.0 tag.a.mts.ru
 
 # [dynamicyield.com]
 0.0.0.0 st-eu.dynamicyield.com

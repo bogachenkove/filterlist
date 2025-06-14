@@ -94,7 +94,6 @@ $removeparam=/affiliate\_id=/
 
 ! BASIC FILTERS START
 /(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid)=){3,})/
-/(?=.*&uuid=)(?=(?:.*?&app(?:Platform|Version|Name){1,3}=){2,})/
 /[_/-]ad[vs](er(ve)?t?(ise|ising|isement)?)?[?_/-]/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 /[_/-]promos?(t(ed?|i(ng|ons?)))[?_/-]/
