@@ -79,7 +79,6 @@ $removeparam=/affiliate_id=/
 @@||local.adguard.org^$script
 @@||injections.adguard.org^$script
 @@||mobileproxy.passport.yandex.net/*/auth/
-@@||maps.yandex.*/*&ads=enabled$xhr,image
 ! WHITELIST END
 
 ! BAD-FILTERS START
@@ -98,8 +97,8 @@ $removeparam=/affiliate_id=/
 /(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid)=){3,})/
 /(?<=^|[&?/.=_-])ad[vsx]?(er(v?e?)?t?(i(si)?ng|se(ment)?)?)?(?=$|[&?/.=_-])/
 /(?<=^|[&?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[&?/.=_-])/
-/(?<=^|[&?/.=_-])promos?(t(ed?|i(ng|ons?)))?(?=$|[&?/.=_-])/$domain=~mail.yandex.ru
-/(?<=^|[&?/.=_-])log(ger|s)?(?=$|[&?/.=_-])/$domain=~bybit.com
+/(?<=^|[&?/.=_-])promos?(t(ed?|i(ng|ons?)))?(?=$|[&?/.=_-])/
+/(?<=^|[&?/.=_-])log(ger|s)?(?=$|[&?/.=_-])/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 ||null^
 ||undefined^
@@ -108,10 +107,6 @@ $removeparam=/affiliate_id=/
 |http*:*?sentry_key=
 |http*:*?payload=
 ! BASIC END START
-
-! APPS START
-||mail.ru^$important,app=ru.vk.store
-! APPS END
 
 ! IMAGES START
 /^https?:\/\/yastatic\.net\/www\/_\/[^\s]{150,}/$image,important
@@ -195,4 +190,8 @@ twitch.tv##.chat-room__content > :has([aria-label="Развернуть рейт
 ||2ch.hk/static/js/events/chikatilo.js$script
 ||2ch.hk/static/js/events/snow_miner_anon_ne_podozrevaet.js$script
 ||yastatic.net/share$script
+@@||yastatic.net/*-promo.$script
+@@||bybit.com/*_logger.$script
+@@||cdninstagram.com/*_ad=$image
+@@||maps.yandex.*/*&ads=$xhr,image
 ! TRASH END

@@ -4,6 +4,7 @@
 # RAW: https://raw.githubusercontent.com/bogachenko/filterlist/main/bogachenkoBL.hosts
 
 # [google.com]
+0.0.0.0 accounts.doubleclick.net
 0.0.0.0 ad.doubleclick.net
 0.0.0.0 ade.googlesyndication.com
 0.0.0.0 ads.google.com
@@ -203,6 +204,7 @@
 0.0.0.0 ts.tracker-api.my.com
 
 # [appsflyer.com]
+0.0.0.0 iyavmv-conversions.appsflyersdk.com
 0.0.0.0 ih4bsf-launches.appsflyersdk.com
 0.0.0.0 ogcvzt-cdn-settings.appsflyersdk.com
 0.0.0.0 4mqwof-cdn-settings.appsflyersdk.com
@@ -754,6 +756,7 @@
 0.0.0.0 tmads.xyz
 0.0.0.0 tads.me
 0.0.0.0 gameanalytics.com
+0.0.0.0 api.adsgram.ai
 
 # [adnxs.com]
 0.0.0.0 adnxs.com
@@ -829,6 +832,8 @@
 0.0.0.0 ksn-crypto-dnscheck-geo.kaspersky-labs.com
 0.0.0.0 dc1-st.ksn.kaspersky-labs.com
 0.0.0.0 dc1-file.ksn.kaspersky-labs.com
+0.0.0.0 dc1.ksn.kaspersky-labs.com
+0.0.0.0 ksn-file-geo.kaspersky-labs.com
 
 # [tonkeeper.com]
 0.0.0.0 anonymous-analytics.tonkeeper.com
