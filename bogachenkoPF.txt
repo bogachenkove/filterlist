@@ -78,6 +78,8 @@ $removeparam=/affiliate_id=/
 ! WHITELIST START
 @@||local.adguard.org^$script
 @@||injections.adguard.org^$script
+@@||mobileproxy.passport.yandex.net/*/auth/
+@@||maps.yandex.*/*&ads=enabled$xhr,image
 ! WHITELIST END
 
 ! BAD-FILTERS START
@@ -96,8 +98,8 @@ $removeparam=/affiliate_id=/
 /(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid)=){3,})/
 /(?<=^|[&?/.=_-])ad[vsx]?(er(v?e?)?t?(i(si)?ng|se(ment)?)?)?(?=$|[&?/.=_-])/
 /(?<=^|[&?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[&?/.=_-])/
-/(?<=^|[&?/.=_-])promos?(t(ed?|i(ng|ons?)))?(?=$|[&?/.=_-])/
-/(?<=^|[&?/.=_-])log(ger|s)?(?=$|[&?/.=_-])/
+/(?<=^|[&?/.=_-])promos?(t(ed?|i(ng|ons?)))?(?=$|[&?/.=_-])/$domain=~mail.yandex.ru
+/(?<=^|[&?/.=_-])log(ger|s)?(?=$|[&?/.=_-])/$domain=~bybit.com
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 ||null^
 ||undefined^
@@ -108,7 +110,7 @@ $removeparam=/affiliate_id=/
 ! BASIC END START
 
 ! APPS START
-||mail.ru^$app=ru.vk.store
+||mail.ru^$important,app=ru.vk.store
 ! APPS END
 
 ! IMAGES START
@@ -147,6 +149,14 @@ vk.com##.videoplayer_overlay_btn_container
 |http*:*/endscreen.js$script,domain=youtube.com|youtu.be|youtube-nocookie.com
 ! SCRIPT END
 
+! REPLACE START
+||yandex.ru^$replace=/banners_carousel//g,domain=market.yandex.ru|eda.yandex.ru
+||yandex.ru^$replace=/promos?(t(ed?|i(ng|ons?)))?//g,domain=market.yandex.ru|eda.yandex.ru
+||yandex.ru^$replace=/ad[vs](er(v?e?)?t?(i(si)?ng|se(ment)?)?)?//g,domain=market.yandex.ru|eda.yandex.ru
+||yandex.ru^$replace=/analy(s(er)?i|tic|ze)?s?t?//g,domain=market.yandex.ru|eda.yandex.ru
+||yandex.ru^$replace=/me?tr[ie]?[ck][asx]?//g,domain=market.yandex.ru|eda.yandex.ru
+! REPLACE END
+
 ! OTHER START
 ||spotify.com/sponsoredplaylist/$important
 ||yandex.ru/an/$important
@@ -167,7 +177,7 @@ vk.com##.videoplayer_overlay_btn_container
 ||ban.etherscan.com^
 ||eas.etherscan.com^
 ||bidajet.info^
-eda.yandex.ru##[style="height: calc(-16px + 33.3333vw);"],[style="width: calc(-32px + 100vw); height: calc(-17.9978px + 56.243vw);"],[style="margin-bottom: 24px; height: calc(-13.3333px + 41.6667vw);"]
+market.yandex.ru##[id*="heroBannerCarousel"]
 bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,scrollscan.com##[id*="wrapper-sevio-"]
 bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,scrollscan.com##.card > div:has-text(/Sponsored/)
 bscscan.com,lineascan.build,arbiscan.io,basescan.org,etherscan.io,polygonscan.com,gnosisscan.io,cronoscan.com,moonscan.io,celoscan.io,blastscan.io,mantlescan.xyz,scrollscan.com,berascan.com##.card > [class*="opacity"]
