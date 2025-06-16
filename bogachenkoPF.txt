@@ -95,9 +95,10 @@ $removeparam=/affiliate_id=/
 
 ! BASIC FILTERS START
 /(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid)=){3,})/
-/(?<=^|[&?/.=_-])ad[vsx]?(er(v?e?)?t?(i(si)?ng|se(ment)?)?)?(?=$|[&?/.=_-])/
-/(?<=^|[&?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[&?/.=_-])/
-/(?<=^|[&?/.=_-])log(ger|s)?(?=$|[&?/.=_-])/
+/(?<=^|[?/.=_-])rekl?(ama?)?(?=$|[?/.=_-])/
+/(?<=^|[?/.=_-])ad[vsx]?(er(v?e?)?t?(i(si)?ng|se(ment)?)?)?(?=$|[?/._-])/$domain=~reddit.com
+/(?<=^|[?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[?/._-])/$domain=~x.com|~twitter.com
+/(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/._-])/$domain=~reddit.com|~bybit.com
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 ||null^
 ||undefined^
@@ -108,7 +109,7 @@ $removeparam=/affiliate_id=/
 ! BASIC END START
 
 ! IMAGES START
-/^https?:\/\/yastatic\.net\/www\/_\/[^\s]{150,}/$image,important
+/(?<=^|[&?/.=_-])pi?x(el)?s?(?=$|[&?/.=_-])/$image
 ! IMAGES END
 
 ! COSMETIC RULES START
@@ -146,9 +147,9 @@ vk.com##.videoplayer_overlay_btn_container
 ! REPLACE START
 ||yandex.ru^$replace=/banners_carousel//g,domain=market.yandex.ru|eda.yandex.ru
 ||yandex.ru^$replace=/promos?(t(ed?|i(ng|ons?)))?//g,domain=market.yandex.ru|eda.yandex.ru
-||yandex.ru^$replace=/ad[vs](er(v?e?)?t?(i(si)?ng|se(ment)?)?)?//g,domain=market.yandex.ru|eda.yandex.ru
+||yandex.ru^$replace=/ad[vs](er(v?e?)?t?(i(si)?ng|se(ment)?)?)?//g,domain=market.yandex.ru|eda.yandex.ru|dzen.ru
 ||yandex.ru^$replace=/analy(s(er)?i|tic|ze)?s?t?//g,domain=market.yandex.ru|eda.yandex.ru
-||yandex.ru^$replace=/me?tr[ie]?[ck][asx]?//g,domain=market.yandex.ru|eda.yandex.ru
+||yandex.ru^$replace=/me?tr[ie]?[ck][asx]?//g,domain=market.yandex.ru|eda.yandex.ru|dzen.ru
 ! REPLACE END
 
 ! OTHER START
@@ -189,7 +190,5 @@ twitch.tv##.chat-room__content > :has([aria-label="Развернуть рейт
 ||2ch.hk/static/js/events/chikatilo.js$script
 ||2ch.hk/static/js/events/snow_miner_anon_ne_podozrevaet.js$script
 ||yastatic.net/share$script
-@@||bybit.com/*_logger.$script
-@@||cdninstagram.com/*_ad=$image
-@@||maps.yandex.*/*&ads=$xhr,image
+||yandex.ru/ads/$important
 ! TRASH END

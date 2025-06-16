@@ -14,7 +14,7 @@
 /^(.+[_.-])?me?tr[ie]?[ck][asx]?([\d]+)?[_.-]/
 /^(.+[_.-])?n[0-9]{2,4}adserv\.\w+$/
 /^(.+[_.-])?promos?(t(ed?|i(ng|ons?)))?([\d]+)?[_.-]/
-/^(.+[_.-])?re[ck]l?(am[asz]?)?([\d]+)?[_.-]/
+/^(.+[_.-])?rekl?(ama?)?([\d]+)?[_.-]/
 /^(.+[_.-])?sentry([\d]+)?[_.-]/
 /^(.+[_.-])?telemetr(y|ics?)([\d]+)?[_.-]/
 /^(.+[_.-])?v(ast|paid)([\d]+)?[_.-]/
@@ -26,11 +26,14 @@
 /^[a-z_-]{3,15}\.[a-f0-9]{32}\.[a-z]{2,3}$/
 /^[ase1-5]{2}\.(torrent|ace)stream\.(info|org|net)$/
 /^[rt]s?[0-3]?\.mail\.ru$/
+/^[0-9]{5,6}\.ms\..*\.(ru|com)$/
 ||1dmp.io^
 ||2leads.com^
 ||2mdn.net^
 ||singular.net^
 ||2xclick.ru^
+||trafffgen.rambler.ru^
+||statchecker.yandex.ru^
 ||24metrics.com^
 ||33across.com^
 ||360yield.com^
