@@ -13,7 +13,6 @@
 /^(.+[_.-])?crash(es)?([\d]+)?[_.-]/
 /^(.+[_.-])?me?tr[ie]?[ck][asx]?([\d]+)?[_.-]/
 /^(.+[_.-])?n[0-9]{2,4}adserv\.\w+$/
-/^(.+[_.-])?partner(ad)?s?([\d]+)?[_.-]/$denyallow=api-partner.spotify.com|partners.wg.spotify.com
 /^(.+[_.-])?promos?(t(ed?|i(ng|ons?)))?([\d]+)?[_.-]/
 /^(.+[_.-])?re[ck]l?(am[asz]?)?([\d]+)?[_.-]/
 /^(.+[_.-])?sentry([\d]+)?[_.-]/
@@ -30,6 +29,7 @@
 ||1dmp.io^
 ||2leads.com^
 ||2mdn.net^
+||singular.net^
 ||2xclick.ru^
 ||24metrics.com^
 ||33across.com^

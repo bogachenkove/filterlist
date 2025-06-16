@@ -97,7 +97,6 @@ $removeparam=/affiliate_id=/
 /(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid)=){3,})/
 /(?<=^|[&?/.=_-])ad[vsx]?(er(v?e?)?t?(i(si)?ng|se(ment)?)?)?(?=$|[&?/.=_-])/
 /(?<=^|[&?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[&?/.=_-])/
-/(?<=^|[&?/.=_-])promos?(t(ed?|i(ng|ons?)))?(?=$|[&?/.=_-])/
 /(?<=^|[&?/.=_-])log(ger|s)?(?=$|[&?/.=_-])/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 ||null^
@@ -190,7 +189,6 @@ twitch.tv##.chat-room__content > :has([aria-label="Развернуть рейт
 ||2ch.hk/static/js/events/chikatilo.js$script
 ||2ch.hk/static/js/events/snow_miner_anon_ne_podozrevaet.js$script
 ||yastatic.net/share$script
-@@||yastatic.net/*-promo.$script
 @@||bybit.com/*_logger.$script
 @@||cdninstagram.com/*_ad=$image
 @@||maps.yandex.*/*&ads=$xhr,image

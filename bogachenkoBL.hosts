@@ -204,6 +204,7 @@
 0.0.0.0 ts.tracker-api.my.com
 
 # [appsflyer.com]
+0.0.0.0 zanbpi-cdn-settings.appsflyersdk.com
 0.0.0.0 iyavmv-conversions.appsflyersdk.com
 0.0.0.0 ih4bsf-launches.appsflyersdk.com
 0.0.0.0 ogcvzt-cdn-settings.appsflyersdk.com
@@ -381,6 +382,7 @@
 0.0.0.0 api-hprof.odkl.ru
 
 # [vk.com]
+0.0.0.0 34211.ms.vk.com
 0.0.0.0 stats.vk-portal.net
 0.0.0.0 tracker-api.vk-analytics.ru
 0.0.0.0 ip4.tracker-api.vk-analytics.ru
@@ -761,6 +763,7 @@
 # [adnxs.com]
 0.0.0.0 adnxs.com
 0.0.0.0 acdn.adnxs.com
+0.0.0.0 msft-ssp.adnxs.com
 
 # [dubleverify.com]
 0.0.0.0 dubleverify.com
