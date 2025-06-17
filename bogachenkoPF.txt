@@ -7,7 +7,7 @@
 
 ! CONDITIONS START
 !#if !ext_ublock
-$$script[src="https://mc.yandex.ru/"]
+!$$script[src="https://mc.yandex.ru/"]
 $$script[src="https://pagead2.googlesyndication.com/"]
 $$script[src="https://www.google-analytics.com/"]
 $$script[src="https://www.googleadservices.com/"]
@@ -145,11 +145,11 @@ vk.com##.videoplayer_overlay_btn_container
 ! SCRIPT END
 
 ! REPLACE START
-!||yandex.ru^$replace=/banners_carousel//,domain=market.yandex.ru|eda.yandex.ru
-!||yandex.ru^$replace=/promos?(t(ed?|i(ng|ons?)))?//,domain=market.yandex.ru|eda.yandex.ru
-!||yandex.ru^$replace=/ad[vs](er(v?e?)?t?(i(si)?ng|se(ment)?)?)?//,domain=market.yandex.ru|eda.yandex.ru|dzen.ru
-!||yandex.ru^$replace=/analy(s(er)?i|tic|ze)?s?t?//,domain=market.yandex.ru|eda.yandex.ru
-!||yandex.ru^$replace=/me?tr[ie]?[ck][asx]?//,domain=market.yandex.ru|eda.yandex.ru|dzen.ru
+||yandex.ru^$replace=/banners_carousel//,domain=market.yandex.ru|eda.yandex.ru
+||yandex.ru^$replace=/promos?(t(ed?|i(ng|ons?)))?//,domain=market.yandex.ru|eda.yandex.ru
+||yandex.ru^$replace=/ad[vs](er(v?e?)?t?(i(si)?ng|se(ment)?)?)?//,domain=market.yandex.ru|eda.yandex.ru|dzen.ru
+||yandex.ru^$replace=/analy(s(er)?i|tic|ze)?s?t?//,domain=market.yandex.ru|eda.yandex.ru
+||yandex.ru^$replace=/me?tr[ie]?[ck][asx]?//,domain=market.yandex.ru|eda.yandex.ru|dzen.ru
 ! REPLACE END
 
 ! OTHER START
@@ -162,6 +162,7 @@ vk.com##.videoplayer_overlay_btn_container
 ||yandex.net/graphql|$important
 ||yandex.ru/*/welcome-features|$important
 ||api.browser.yandex.ru/uma_proto|$important
+||google.com/mail/adsfe/$important
 ! OTHER END
 
 ! TRASH START
