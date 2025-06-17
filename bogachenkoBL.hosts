@@ -144,6 +144,8 @@
 0.0.0.0 detectportal.firefox.com
 
 # [yandex.ru]
+0.0.0.0 startup.appmetrica.yango.com
+0.0.0.0 appmetrica.yango.com
 0.0.0.0 statchecker.yandex.ru
 0.0.0.0 abt.s3.yandex.net
 0.0.0.0 adfstat.yandex.ru
@@ -801,6 +803,7 @@
 0.0.0.0 diginetica.net
 
 # [kaspersky.com]
+0.0.0.0 ds.kaspersky.com
 0.0.0.0 ksn-a-stat-geo.kaspersky-labs.com
 0.0.0.0 ksn-ml-geo.kaspersky-labs.com
 0.0.0.0 kaspersky.com
