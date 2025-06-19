@@ -207,6 +207,8 @@
 0.0.0.0 ts.tracker-api.my.com
 
 # [appsflyer.com]
+0.0.0.0 zk3ts5-cdn-settings.appsflyersdk.com
+0.0.0.0 r2oaa1-launches.appsflyersdk.com
 0.0.0.0 zanbpi-cdn-settings.appsflyersdk.com
 0.0.0.0 iyavmv-conversions.appsflyersdk.com
 0.0.0.0 ih4bsf-launches.appsflyersdk.com
@@ -592,6 +594,7 @@
 
 # [qonversion.io]
 0.0.0.0 qonversion.io
+0.0.0.0 api.qonversion.io
 
 # [isnssdk.com]
 0.0.0.0 i.isnssdk.com
@@ -804,6 +807,7 @@
 
 # [kaspersky.com]
 0.0.0.0 ds.kaspersky.com
+0.0.0.0 ksn-info-geo.kaspersky-labs.com
 0.0.0.0 ksn-a-stat-geo.kaspersky-labs.com
 0.0.0.0 ksn-ml-geo.kaspersky-labs.com
 0.0.0.0 kaspersky.com
@@ -852,3 +856,28 @@
 # [rambler.ru]
 0.0.0.0 trafffgen.rambler.ru
 0.0.0.0 ssp.rambler.ru
+
+# [startappservice.com]
+0.0.0.0 adsmetadata.startappservice.com
+
+# [singular.net]
+0.0.0.0 sdk-api-v1.singular.net
+0.0.0.0 www.singular.net
+0.0.0.0 singular.net
+
+# [amplitude.com]
+0.0.0.0 api.amplitudeexperiment.com
+0.0.0.0 amplitude.com
+0.0.0.0 cdn.amplitude.com
+
+# [outbrain.com]
+0.0.0.0 outbrain.com
+0.0.0.0 www.outbrain.com
+0.0.0.0 traffic.outbrain.com
+0.0.0.0 odb.outbrain.com
+0.0.0.0 widgetmonitor.outbrain.com
+
+# [teads.com]
+0.0.0.0 www.teads.com
+0.0.0.0 teads.com
+0.0.0.0 teads.tv

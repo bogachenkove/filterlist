@@ -5,19 +5,6 @@
 ! License: https://raw.githubusercontent.com/bogachenko/filterlist/main/LICENSE.md
 ! Expires: 3 days
 
-! CONDITIONS START
-!#if !ext_ublock
-!$$script[src="https://mc.yandex.ru/"]
-$$script[src="https://pagead2.googlesyndication.com/"]
-$$script[src="https://www.google-analytics.com/"]
-$$script[src="https://www.googleadservices.com/"]
-$$script[src="https://www.googletagmanager.com/"]
-$$script[src="https://www.googletagservices.com/"]
-$$script[src="https://tganalytics.xyz/"]
-$$script[src="https://sad.adsgram.ai/"]
-$$script[src="https://cdn.tmads.xyz/"]
-!#endif
-
 ! REMOVEPARAM START
 $removeparam=/refs?(err?al)?[_=]/,domain=~accounts.spotify.com
 $removeparam=/referralCode=/
