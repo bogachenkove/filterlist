@@ -386,7 +386,6 @@
 0.0.0.0 rs.mail.ru
 0.0.0.0 top-fwz1.mail.ru
 0.0.0.0 xray.mail.ru
-0.0.0.0 kbr.rustore.ru
 0.0.0.0 api-hprof.odkl.ru
 
 # [vk.com]
@@ -397,6 +396,10 @@
 0.0.0.0 ip4.tracker-api.vk-analytics.ru
 0.0.0.0 ip6.tracker-api.vk-analytics.ru
 0.0.0.0 ts.tracker-api.vk-analytics.ru
+
+# [rustore.ru]
+0.0.0.0 kbr.rustore.ru
+0.0.0.0 rebus.rustore.ru
 
 # [reddit.com]
 0.0.0.0 w3-reporting.reddit.com
@@ -814,6 +817,7 @@
 0.0.0.0 ksn-info-geo.kaspersky-labs.com
 0.0.0.0 ksn-a-stat-geo.kaspersky-labs.com
 0.0.0.0 ksn-ml-geo.kaspersky-labs.com
+0.0.0.0 ksn-pp.kaspersky-labs.com
 0.0.0.0 kaspersky.com
 0.0.0.0 kaspersky-labs.com
 0.0.0.0 s19.upd.kaspersky.com

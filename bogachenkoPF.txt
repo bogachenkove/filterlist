@@ -91,7 +91,7 @@ $removeparam=/affiliate_id=/
 /(?<=^|[?/.=_-])rekl?(ama?)?(?=$|[?/._-])/
 /(?<=^|[?/.=_-])ad[vsx]?(er(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?(?=$|[?/._-])/$domain=~reddit.com
 /(?<=^|[?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[?/._-])/$domain=~x.com|~twitter.com
-/(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/._-])/$domain=~reddit.com|~bybit.com
+/(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/._-])/$domain=~reddit.com|~bybit.com|~alfabank.ru
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 ||null^
 ||undefined^
@@ -106,7 +106,7 @@ $removeparam=/affiliate_id=/
 
 ! APP START
 /^(?!.*(s(potify)?(cdn)?\.com?|g(oogle|static)\.com)).*$/$important,app=Spotify.exe|com.spotify.music
-/^(?!.*(sberbank)\.ru).*$/$important,app=ru.sberbankmobile
+/^(?!.*(sberbank)\.ru|googleapis\.com).*$/$important,app=ru.sberbankmobile
 !/^(?!.*(vk|userapi)\.com).*$/$important,domain=vk.com
 ! APP END
 
@@ -157,7 +157,7 @@ vk.com##.videoplayer_overlay_btn_container
 ! OTHER START
 ||spotify.com/sponsoredplaylist/$important
 ||yandex.ru/an/$important
-||yandex.ru/appcry|$important
+||yandex.ru/appcry$important
 ||yandex.ru/clck/click$important
 ||yandex.net/*/experiments$important
 ||yandex.net/report|$important
