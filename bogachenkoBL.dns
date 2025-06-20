@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/bogachenko/filterlist/
 ! License: https://raw.githubusercontent.com/bogachenko/filterlist/main/LICENSE.md
 
-/^(.+[_.-])?ad[sxv]?(er(v?e?)?t?(i(si)?ng|se(ment)?)?)?[_.-]/
+/^(.+[_.-])?ad[vsx]?(er(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?[_.-]/
 /^(.+[_.-])?ajx?[1-9]{3,4}\.(bid|online|xyz)$/
 /^(.+[_.-])?analytics?([\d]+)?[_.-]/
 /^(.+[_.-])?bann?ers?([\d]+)?[_.-]/
@@ -14,6 +14,7 @@
 /^(.+[_.-])?me?tr[ie]?[ck][asx]?([\d]+)?[_.-]/
 /^(.+[_.-])?n[0-9]{2,4}adserv\.\w+$/
 /^(.+[_.-])?promos?(t(ed?|i(ng|ons?)))?([\d]+)?[_.-]/
+/^(.+[_.-])?pre-?roll([\d]+)?[_.-]/
 /^(.+[_.-])?rekl?(ama?)?([\d]+)?[_.-]/
 /^(.+[_.-])?sentry([\d]+)?[_.-]/
 /^(.+[_.-])?telemetr(y|ics?)([\d]+)?[_.-]/
@@ -570,6 +571,7 @@
 ||spyneteurope.microsoft.com^
 ||ssp.rambler.ru^
 ||sstats.adobe.com^
+||advmusic.com^
 ||st-*.dynamicyield.com^
 ||startup-mobile.ap.yandex-net.ru^
 ||startup.mobile.yandex.net^

@@ -93,6 +93,9 @@
 0.0.0.0 graph.facebook.com
 0.0.0.0 pixel.facebook.com
 
+# [instagram.com]
+0.0.0.0 graph.instagram.com
+
 # [xiaomi.com]
 0.0.0.0 ad.mi.com
 0.0.0.0 ad.xiaomi.com
@@ -383,6 +386,7 @@
 0.0.0.0 rs.mail.ru
 0.0.0.0 top-fwz1.mail.ru
 0.0.0.0 xray.mail.ru
+0.0.0.0 kbr.rustore.ru
 0.0.0.0 api-hprof.odkl.ru
 
 # [vk.com]
@@ -881,3 +885,6 @@
 0.0.0.0 www.teads.com
 0.0.0.0 teads.com
 0.0.0.0 teads.tv
+
+# [statad.ru]
+0.0.0.0 statad.ru
