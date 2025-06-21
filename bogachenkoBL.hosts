@@ -210,6 +210,7 @@
 0.0.0.0 ts.tracker-api.my.com
 
 # [appsflyer.com]
+0.0.0.0 attr.appsflyersdk.com
 0.0.0.0 zk3ts5-cdn-settings.appsflyersdk.com
 0.0.0.0 r2oaa1-launches.appsflyersdk.com
 0.0.0.0 zanbpi-cdn-settings.appsflyersdk.com
@@ -399,6 +400,8 @@
 
 # [rustore.ru]
 0.0.0.0 kbr.rustore.ru
+0.0.0.0 vkpns.rustore.ru
+0.0.0.0 auth.vkpns.rustore.ru
 0.0.0.0 rebus.rustore.ru
 
 # [reddit.com]
@@ -866,6 +869,7 @@
 0.0.0.0 ssp.rambler.ru
 
 # [startappservice.com]
+0.0.0.0 infoevent.startappservice.com
 0.0.0.0 adsmetadata.startappservice.com
 
 # [singular.net]
@@ -892,3 +896,10 @@
 
 # [statad.ru]
 0.0.0.0 statad.ru
+
+# [avito.ru]
+0.0.0.0 913a1d7491909728fe865eaecac03b97.rt.avito.ru
+0.0.0.0 rt.avito.ru
+
+# [uxfeedback.ru]
+0.0.0.0 public-api.uxfeedback.ru
