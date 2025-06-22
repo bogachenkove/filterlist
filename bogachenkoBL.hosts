@@ -77,6 +77,7 @@
 0.0.0.0 prod-collecticon.outlookmobile.com
 0.0.0.0 self.events.data.microsoft.com
 0.0.0.0 teams.events.data.microsoft.com
+0.0.0.0 eu-mobile.events.data.microsoft.com
 
 # [live.com]
 0.0.0.0 nexus.officeapps.live.com
@@ -584,6 +585,7 @@
 0.0.0.0 mtsopros.mts.ru
 0.0.0.0 static.a.mts.ru
 0.0.0.0 tag.a.mts.ru
+0.0.0.0 cm.a.mts.ru
 
 # [dynamicyield.com]
 0.0.0.0 st-eu.dynamicyield.com

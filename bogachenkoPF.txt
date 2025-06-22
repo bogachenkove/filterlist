@@ -6,21 +6,12 @@
 ! Expires: 3 days
 
 ! TEST START
-/^(172\.217\.[12][0-9]{2,3}\.[0-9]{2,3}|216\.58\.2[0-9]{2}\.[0-9]{1,3}|142\.250\.74\.[0-9]{2,3}|35\.188\.42\.15):443$/$network,app=Spotify.exe|com.spotify.music
+!
 ! TEST END
 
 ! REMOVEPARAM START
-$removeparam=/refs?(err?al)?[_=]/,domain=~accounts.spotify.com
-$removeparam=/referralCode=/
-$removeparam=/startapp=/
-$removeparam=/tgWebAppStartParam=/
-$removeparam=/inviteCode=/
-$removeparam=/invite=/
-$removeparam=/startapp=/
-$removeparam=/idUser=/
-$removeparam=/tgid=/
-$removeparam=/channelid=/
-$removeparam=/affiliate_id=/
+$removeparam=/^refs?(err?al)?[_=]/
+$removeparam=/^utm_/
 ! REMOVEPARAM END
 
 ! DOMAINS START
@@ -88,10 +79,10 @@ $removeparam=/affiliate_id=/
 
 ! BASIC FILTERS START
 /(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid)=){3,})/
-/(?<=^|[?/.=_-])rekl?(ama?)?(?=$|[?/._-])/
-/(?<=^|[?/.=_-])ad[vsx]?(er(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?(?=$|[?/._-])/$domain=~reddit.com
-/(?<=^|[?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[?/._-])/$domain=~x.com|~twitter.com
-/(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/._-])/$domain=~reddit.com|~bybit.com|~alfabank.ru
+/(?<=^|[?/.=_-])rek?l?(ama?)?(?=$|[?/.=_-])/
+/(?<=^|[?/.=_-])ad[vsx]?(er(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?(?=$|[?/.=_-])/
+/(?<=^|[?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[?/.=_-])/
+/(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/.=_-])/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 ||null^
 ||undefined^
@@ -99,9 +90,10 @@ $removeparam=/affiliate_id=/
 ||sentry.
 |http*:*?sentry_key=
 |http*:*?payload=
-|http*:*?reklama=
-|http*:*?re=
+|http*:*/prerolls.
 |http*:*/adtech-
+|http*:*/pagead/
+|http*:*/videoads/
 ! BASIC END START
 
 ! APP START
@@ -169,6 +161,12 @@ vk.com##.videoplayer_overlay_btn_container
 
 ! TRASH START
 @@|http*:*?payload=$domain=krea.ai
+@@_ad=$3p,image,domain=instagram.com
+@@_logger.$1p,script,domain=bybit.com
+@@/ads-$3p,script,domain=reddit.com
+@@/ads-$3p,script,domain=reddit.com
+@@-ad-$3p,script,domain=reddit.com
+@@/ad-$3p,script,domain=reddit.com
 ||lucky-gift.org^
 ||tel1mekar.com^
 ||xuv.etherscan.com^
