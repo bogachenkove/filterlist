@@ -80,7 +80,7 @@ $removeparam=/^utm_/
 ! BASIC FILTERS START
 /(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid)=){3,})/
 /(?<=^|[?/.=_-])rekl?(ama?)?(?=$|[?/.=_-])/
-/(?<=^|[?/.=_-])ad[vsx]?(er(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?(?=$|[?/.=_-])/
+/(?<=^|[?/.=_-])ad[vsx]?((is)?er?(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?(?=$|[?/.=_-])/
 /(?<=^|[?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[?/.=_-])/
 /(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/.=_-])/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
@@ -167,6 +167,9 @@ vk.com##.videoplayer_overlay_btn_container
 @@/ads-$3p,script,domain=reddit.com
 @@-ad-$3p,script,domain=reddit.com
 @@/ad-$3p,script,domain=reddit.com
+@@||api.2gis.ru/*/suggests?key=$xhr
+@@||api.2gis.ru/*/items?key=$xhr
+@@||api.2gis.ru/*/items/byid?id=$xhr
 ||lucky-gift.org^
 ||tel1mekar.com^
 ||xuv.etherscan.com^
