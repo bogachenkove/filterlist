@@ -23,7 +23,7 @@
 /^log([ys]|g(er|ing))?([\d]+)?[_.-]/
 /^pi?x(el)?([\d]+)?[_.-]/
 /^vii[a-z]{3}\.com$/
-/^[sy]metric[as]?[1-3]?\.com$/
+/^[syn]metric[as]?[1-3]?\./
 /^[a-z_-]{3,15}\.[a-f0-9]{32}\.[a-z]{2,3}$/
 /^[ase1-5]{2}\.(torrent|ace)stream\.(info|org|net)$/
 /^[rt]s?[0-3]?\.mail\.ru$/
@@ -378,7 +378,7 @@
 ||lifestreet.com^
 ||liftoff.io^
 ||log*-*.tiktokv.com^
-||luckyorange.com^
+||luckyorange.*^
 ||m.acestream.net^
 ||magsrv.com^
 ||main-tcod.com^
