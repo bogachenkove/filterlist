@@ -211,7 +211,9 @@
 0.0.0.0 ts.tracker-api.my.com
 
 # [appsflyer.com]
+0.0.0.0 zk3ts5-launches.appsflyersdk.com
 0.0.0.0 attr.appsflyersdk.com
+0.0.0.0 kiqsrh-launches.appsflyersdk.com
 0.0.0.0 zk3ts5-cdn-settings.appsflyersdk.com
 0.0.0.0 r2oaa1-launches.appsflyersdk.com
 0.0.0.0 zanbpi-cdn-settings.appsflyersdk.com
@@ -391,8 +393,12 @@
 0.0.0.0 api-hprof.odkl.ru
 
 # [vk.com]
+0.0.0.0 ads.vk.com
 0.0.0.0 24112.ms.vk.com
 0.0.0.0 34211.ms.vk.com
+0.0.0.0 33211.ms.vk.com
+0.0.0.0 45211.ms.vk.com
+0.0.0.0 652111.ms.vk.com
 0.0.0.0 stats.vk-portal.net
 0.0.0.0 tracker-api.vk-analytics.ru
 0.0.0.0 ip4.tracker-api.vk-analytics.ru
@@ -823,6 +829,7 @@
 0.0.0.0 ksn-a-stat-geo.kaspersky-labs.com
 0.0.0.0 ksn-ml-geo.kaspersky-labs.com
 0.0.0.0 ksn-pp.kaspersky-labs.com
+0.0.0.0 ksn-crypto-whocalls-geo.kaspersky-labs.com
 0.0.0.0 kaspersky.com
 0.0.0.0 kaspersky-labs.com
 0.0.0.0 s19.upd.kaspersky.com
@@ -905,3 +912,11 @@
 
 # [uxfeedback.ru]
 0.0.0.0 public-api.uxfeedback.ru
+
+# [nr-data.net]
+0.0.0.0 nr-data.net
+0.0.0.0 mobile-collector.eu01.nr-data.net
+
+# [mobileadexchange.net]
+0.0.0.0 mobileadexchange.net
+0.0.0.0 adsmetadata.mobileadexchange.net

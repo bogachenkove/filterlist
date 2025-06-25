@@ -99,7 +99,8 @@ $removeparam=/^utm_/
 ! APP START
 /^(?!.*(s(potify)?(cdn)?\.com?|g(oogle|static)\.com)).*$/$important,app=Spotify.exe|com.spotify.music
 /^(?!.*(sberbank)\.ru|googleapis\.com).*$/$important,app=ru.sberbankmobile
-!/^(?!.*(vk|userapi)\.com).*$/$important,domain=vk.com
+/^(?!.*(vk(user(audio|api))?|google|okcdn)\.com).*$/$important,domain=vk.com
+/^(?!.*(api\.vk\.com|rustore\.ru)).*$/$important,app=ru.vk.store
 ! APP END
 
 ! IMAGES START
@@ -157,6 +158,10 @@ vk.com##.videoplayer_overlay_btn_container
 ||yandex.ru/*/welcome-features|$important
 ||api.browser.yandex.ru/uma_proto|$important
 ||google.com/mail/adsfe/$important
+||api.vk.com/method/apps.getAdvertisementConfig|$important
+||api.vk.com/method/adsint.$important
+||api.vk.com/method/stats.trackVisitor|$important
+||api.vk.com/method/account.getCounters|$important
 ! OTHER END
 
 ! TRASH START
@@ -195,4 +200,7 @@ twitch.tv##.chat-room__content > :has([aria-label="Развернуть рейт
 ||2ch.hk/static/js/events/snow_miner_anon_ne_podozrevaet.js$script
 ||yastatic.net/share$script
 ||yandex.ru/ads/$important
+||mail.ru/*/fast-slot.js$replace=/&&t.mimic.setup.broker//,badfilter
+||mail.ru^$~script,~xmlhttprequest,replace=/broker:/_broker:/,badfilter
+://mail.ru^$~script,~xmlhttprequest,replace=/a=mr.mimicEnabled?/a=mr.mimic_Enabled?/,badfilter
 ! TRASH END
