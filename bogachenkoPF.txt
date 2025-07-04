@@ -89,18 +89,17 @@ $removeparam=/^utm_/
 ||vast.
 ||sentry.
 |http*:*?sentry_key=
+|http*:*?sentry_version=
 |http*:*?payload=
 |http*:*/prerolls.
 |http*:*/adtech-
 |http*:*/pagead/
 |http*:*/videoads/
+|http*:*/adfox/
 ! BASIC END START
 
 ! APP START
 /^(?!.*(s(potify)?(cdn)?\.com?|g(oogle|static)\.com)).*$/$important,app=Spotify.exe|com.spotify.music
-/^(?!.*(sberbank)\.ru|googleapis\.com).*$/$important,app=ru.sberbankmobile
-/^(?!.*(vk(user(audio|api))?|google|okcdn)\.com).*$/$important,domain=vk.com
-/^(?!.*(api\.vk\.com|rustore\.ru)).*$/$important,app=ru.vk.store
 ! APP END
 
 ! IMAGES START
@@ -156,12 +155,13 @@ vk.com##.videoplayer_overlay_btn_container
 ||yandex.net/report|$important
 ||yandex.net/graphql|$important
 ||yandex.ru/*/welcome-features|$important
-||api.browser.yandex.ru/uma_proto|$important
+||browser.yandex.ru/uma_proto|$important
 ||google.com/mail/adsfe/$important
-||api.vk.com/method/apps.getAdvertisementConfig|$important
-||api.vk.com/method/adsint.$important
-||api.vk.com/method/stats.trackVisitor|$important
-||api.vk.com/method/account.getCounters|$important
+||vk.com/method/apps.getAdvertisementConfig|$important
+||vk.com/method/adsint.$important
+||vk.com/method/stats.trackVisitor|$important
+||vk.com/method/account.getCounters|$important
+||vk.com/reports/static/reports.sentry.$important
 ! OTHER END
 
 ! TRASH START
@@ -172,6 +172,7 @@ vk.com##.videoplayer_overlay_btn_container
 @@/ads-$3p,script,domain=reddit.com
 @@-ad-$3p,script,domain=reddit.com
 @@/ad-$3p,script,domain=reddit.com
+@@-log-$3p,script,domain=reddit.com
 @@||api.2gis.ru/*/suggests?key=$xhr
 @@||api.2gis.ru/*/items?key=$xhr
 @@||api.2gis.ru/*/items/byid?id=$xhr
