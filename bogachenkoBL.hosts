@@ -211,11 +211,14 @@
 0.0.0.0 ts.tracker-api.my.com
 
 # [appsflyer.com]
+0.0.0.0 h5l6mc-inapps.appsflyersdk.com
 0.0.0.0 zk3ts5-launches.appsflyersdk.com
+0.0.0.0 h5l6mc-cdn-settings.appsflyersdk.com
 0.0.0.0 attr.appsflyersdk.com
 0.0.0.0 kiqsrh-launches.appsflyersdk.com
 0.0.0.0 zk3ts5-cdn-settings.appsflyersdk.com
 0.0.0.0 r2oaa1-launches.appsflyersdk.com
+0.0.0.0 h5l6mc-launches.appsflyersdk.com
 0.0.0.0 zanbpi-cdn-settings.appsflyersdk.com
 0.0.0.0 iyavmv-conversions.appsflyersdk.com
 0.0.0.0 ih4bsf-launches.appsflyersdk.com
@@ -921,3 +924,6 @@
 # [mobileadexchange.net]
 0.0.0.0 mobileadexchange.net
 0.0.0.0 adsmetadata.mobileadexchange.net
+
+# [wildberries.ru]
+0.0.0.0 marketplace-sentry.wb.ru

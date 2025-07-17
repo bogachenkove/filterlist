@@ -55,6 +55,7 @@ $removeparam=/^utm_/
 ||ext-twitch.tv^$important
 ||kaspersky-labs.com^$important
 ||kaspersky.com^$important
+||jivo.ru^$important
 ! DOMAINS END
 
 ! WHITELIST START
@@ -78,7 +79,7 @@ $removeparam=/^utm_/
 ! BAD-FILTERS END
 
 ! BASIC FILTERS START
-/(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid)=){3,})/
+/(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid|ver(sion)?|name)=){3,})/
 /(?<=^|[?/.=_-])rekl?(ama?)?(?=$|[?/.=_-])/
 /(?<=^|[?/.=_-])ad[vsx]?((is)?er?(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?(?=$|[?/.=_-])/
 /(?<=^|[?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[?/.=_-])/
@@ -109,11 +110,11 @@ $removeparam=/^utm_/
 ! COSMETIC RULES START
 ##[src^="//ads."]
 ##[src^="//ad."]
-youtube.com##.ytp-endscreen-content,.attached-message,.sponsorThumbnailLabel,.ytp-paid-content-overlay,.undefined > yt-button-shape
+youtube.com##.ytp-endscreen-content,.attached-message,.sponsorThumbnailLabel,.ytp-paid-content-overlay,.undefined > yt-button-shape,.ytp-ce-element-show,.ytp-scrubber-container
 twitch.tv##.default-panel>[class]:not([href*="vk.com"]):not([href*="donat"]):not([href*="instagram.com"]):not([href*="youtube.com"]):not([href*="twitter.com"]):not([href*="steamcommunity.com"]):not([href*="discord.gg"]):not([href*="facebook.com"]):not([href*="twitch.tv"]):not([href*="t.me"]):not([href*="tiktok.com"]):not([href*="boosty.to"]):not([href*="google.com"])
 twitch.tv##[class*="extensions-dock"],[class*="giftExpirationCallout"]
 tronscan.*##.token-picture-profit,.token-text-profit,.profit-box,.address-profit,.tron-icon-like,.profitSec,.noticeNews
-bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io,cardanoscan.io##[alt="Ads"],[id*="TextAd"],[id*="AdResult"],#my-banner-ad,.position-relative[target="_blank"],.noindex-section,#masterDivCookie,section.container-xxl > .py-4,form[action="/search"]+[class],#cookieConsentBanner,#masterNoticeBar
+bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io,cardanoscan.io,scrollscan.com##[alt="Ads"],[id*="TextAd"],[id*="AdResult"],#my-banner-ad,.position-relative[target="_blank"],.noindex-section,#masterDivCookie,section.container-xxl > .py-4,form[action="/search"]+[class],#cookieConsentBanner,#masterNoticeBar
 bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io##section:style(background-image: none !important;)
 bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io##.justify-content-between.flex-wrap > div.d-flex:last-child
 bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io##div:has(>.search-panel-ads)
@@ -204,4 +205,5 @@ twitch.tv##.chat-room__content > :has([aria-label="Развернуть рейт
 ||mail.ru/*/fast-slot.js$replace=/&&t.mimic.setup.broker//,badfilter
 ||mail.ru^$~script,~xmlhttprequest,replace=/broker:/_broker:/,badfilter
 ://mail.ru^$~script,~xmlhttprequest,replace=/a=mr.mimicEnabled?/a=mr.mimic_Enabled?/,badfilter
+@@77.88.21.122$network,app=ru.yandex.rasp,badfilter
 ! TRASH END
