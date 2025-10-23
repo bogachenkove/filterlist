@@ -81,9 +81,10 @@ $removeparam=/^utm_/
 ! BASIC FILTERS START
 /(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid|ver(sion)?|name)=){3,})/
 /(?<=^|[?/.=_-])rekl?(ama?)?(?=$|[?/.=_-])/
-/(?<=^|[?/.=_-])ad[vsx]?((is)?er?(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?(?=$|[?/.=_-])/
-/(?<=^|[?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[?/.=_-])/
-/(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/.=_-])/
+/(?<=^|[?/.=_-])ad[vsx]?((is)?er?(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?(?=$|[?/.=_-])/$domain=~tiktok.com
+/(?<=^|[?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[?/.=_-])/$domain=~x.com
+/(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/.=_-])/$domain=~proton.me|~revoke.cash
+/(?<=^|[?/.=_-])counter(?=$|[?/.=_-])/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 ||null^
 ||undefined^
@@ -110,7 +111,7 @@ $removeparam=/^utm_/
 ! COSMETIC RULES START
 ##[src^="//ads."]
 ##[src^="//ad."]
-youtube.com##.ytp-endscreen-content,.attached-message,.sponsorThumbnailLabel,.ytp-paid-content-overlay,.undefined > yt-button-shape,.ytp-ce-element-show,.ytp-scrubber-container
+youtube.com##.ytp-endscreen-content,.attached-message,.sponsorThumbnailLabel,.ytp-paid-content-overlay,.undefined > yt-button-shape,.ytp-ce-element-show,.ytp-scrubber-container,.ytp-fullscreen-grid
 twitch.tv##.default-panel>[class]:not([href*="vk.com"]):not([href*="donat"]):not([href*="instagram.com"]):not([href*="youtube.com"]):not([href*="twitter.com"]):not([href*="steamcommunity.com"]):not([href*="discord.gg"]):not([href*="facebook.com"]):not([href*="twitch.tv"]):not([href*="t.me"]):not([href*="tiktok.com"]):not([href*="boosty.to"]):not([href*="google.com"])
 twitch.tv##[class*="extensions-dock"],[class*="giftExpirationCallout"]
 tronscan.*##.token-picture-profit,.token-text-profit,.profit-box,.address-profit,.tron-icon-like,.profitSec,.noticeNews
