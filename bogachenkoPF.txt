@@ -59,11 +59,9 @@ $removeparam=/^utm_/
 ! DOMAINS END
 
 ! WHITELIST START
-@@||local.adguard.org^$script
-@@||injections.adguard.org^$script
-@@||passport.yandex.net/*/auth/
-@@||passport.yandex.ru/am/
-@@||passport.yandex.ru/pwl-yandex/
+@@||local.adguard.org^
+@@||injections.adguard.org^
+@@||passport.yandex.net^
 ! WHITELIST END
 
 ! BAD-FILTERS START
@@ -81,9 +79,9 @@ $removeparam=/^utm_/
 ! BASIC FILTERS START
 /(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid|ver(sion)?|name)=){3,})/
 /(?<=^|[?/.=_-])rekl?(ama?)?(?=$|[?/.=_-])/
-/(?<=^|[?/.=_-])ad[vsx]?((is)?er?(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?(?=$|[?/.=_-])/$domain=~tiktok.com
-/(?<=^|[?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[?/.=_-])/$domain=~x.com
-/(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/.=_-])/$domain=~proton.me|~revoke.cash
+/(?<=^|[?/.=_-])ad[vsx]?((is)?er?(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?(?=$|[?/.=_-])/$domain=~twitch.tv|~tiktok.com
+/(?<=^|[?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[?/.=_-])/
+/(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/.=_-])/
 /(?<=^|[?/.=_-])counter(?=$|[?/.=_-])/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 ||null^
@@ -101,7 +99,7 @@ $removeparam=/^utm_/
 ! BASIC END START
 
 ! APP START
-/^(?!.*(s(potify)?(cdn)?\.com?|g(oogle|static)\.com)).*$/$important,app=Spotify.exe|com.spotify.music
+/^(?!.*(s(potify)?(cdn)?\.com?|g(oogle|static)\.com|recaptcha\.net)).*$/$important,app=Spotify.exe|com.spotify.music
 ! APP END
 
 ! IMAGES START
@@ -112,32 +110,19 @@ $removeparam=/^utm_/
 ##[src^="//ads."]
 ##[src^="//ad."]
 youtube.com##.ytp-endscreen-content,.attached-message,.sponsorThumbnailLabel,.ytp-paid-content-overlay,.undefined > yt-button-shape,.ytp-ce-element-show,.ytp-scrubber-container,.ytp-fullscreen-grid
-twitch.tv##.default-panel>[class]:not([href*="vk.com"]):not([href*="donat"]):not([href*="instagram.com"]):not([href*="youtube.com"]):not([href*="twitter.com"]):not([href*="steamcommunity.com"]):not([href*="discord.gg"]):not([href*="facebook.com"]):not([href*="twitch.tv"]):not([href*="t.me"]):not([href*="tiktok.com"]):not([href*="boosty.to"]):not([href*="google.com"])
-twitch.tv##[class*="extensions-dock"],[class*="giftExpirationCallout"]
-tronscan.*##.token-picture-profit,.token-text-profit,.profit-box,.address-profit,.tron-icon-like,.profitSec,.noticeNews
-bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io,cardanoscan.io,scrollscan.com##[alt="Ads"],[id*="TextAd"],[id*="AdResult"],#my-banner-ad,.position-relative[target="_blank"],.noindex-section,#masterDivCookie,section.container-xxl > .py-4,form[action="/search"]+[class],#cookieConsentBanner,#masterNoticeBar
-bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io##section:style(background-image: none !important;)
-bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io##.justify-content-between.flex-wrap > div.d-flex:last-child
-bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io##div:has(>.search-panel-ads)
-bscscan.com,etherscan.io,polygonscan.com,gnosisscan.io,arbiscan.io##.text-muted:has-text(/Sponsored/)
-solscan.io##.adsHeaderTextWrapper
-cardanoscan.io##.absolute:has-text(/Ad/)
-cardanoscan.io##body > .relative,.relative > [href] > .absolute
-coinmarketcap.com##.coin-ad-banner
-blockchair.com##.buggy-chat,.okane-top,.extension-widget
-blockchair.com##.flow>:has-text(/Advertise here|Turn off ads|Sponsored/)
-vk.com##.videoplayer_overlay_btn_container
+ya.ru##SplashscreenSystemWindows:has-text(Яндекс Браузер)
 ! COSMETIC RULES END
 
 ! CONTENT SECURITY POLICY START
 ||twitch.tv^$important,csp=default-src 'self' 'unsafe-inline' 'unsafe-eval' wss: blob: data: *.jtvnw.net *.ttvnw.net *.twitchcdn.net *.twitch.tv *.facebook.com *.facebook.net *.recaptcha.net *.google.com *.gstatic.com *.algolia.net local.adguard.org injections.adguard.org *.cloudfront.net *.fastly.net *.live-video.net;
 ||youtube.com^$important,csp=default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.ggpht.com *.googlevideo.com *.youtube.com *.ytimg.com *.googleusercontent.com *.google.com *.googleapis.com *.gstatic.com local.adguard.org injections.adguard.org;
 ||vk.com^$important,csp=default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.vk.com vk.com *.vk.ru *.youtube.com *.ggpht.com *.googlevideo.com *.google.com *.gstatic.com local.adguard.org injections.adguard.org *.mail.ru; connect-src 'self' *.okcdn.ru *.vkuservideo.net *.vkuseraudio.net *.userapi.com *.vk.com vk.com *.mycdn.me; media-src 'self' data: *.okcdn.ru *.mycdn.me *.vkuser.net *.userapi.com; img-src 'self' data: blob: *.mycdn.me *.userapi.com *.vk.com vk.com; font-src 'self' data: *.vk.com vk.com;
-||tiktok.com^$important,csp=default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: wss: *.ttwstatic.com *.tiktokcdn.com *.tiktok.com *.tiktokcdn-us.com *.byteoversea.com local.adguard.org injections.adguard.org *.ibyteimg.com *.ibytedtos.com *.tiktokv.com;
 ! CONTENT SECURITY POLICY END
 
 ! SCRIPT START
 |http*:*/endscreen.js$script,domain=youtube.com|youtu.be|youtube-nocookie.com
+||2ch.org/static/js/events/snow_miner_anon_ne_podozrevaet.js$script
+||2ch.org/static/js/events/SleepingBusinessman.js$script
 ! SCRIPT END
 
 ! REPLACE START
@@ -207,4 +192,5 @@ twitch.tv##.chat-room__content > :has([aria-label="Развернуть рейт
 ||mail.ru^$~script,~xmlhttprequest,replace=/broker:/_broker:/,badfilter
 ://mail.ru^$~script,~xmlhttprequest,replace=/a=mr.mimicEnabled?/a=mr.mimic_Enabled?/,badfilter
 @@77.88.21.122$network,app=ru.yandex.rasp,badfilter
+@@||otvet-front.cdn-vk.net^$domain=otvet.mail.ru
 ! TRASH END
