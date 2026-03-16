@@ -10,6 +10,7 @@
 0.0.0.0 ads.google.com
 0.0.0.0 ads.youtube.com
 0.0.0.0 adservice.google.com
+0.0.0.0 ogads-pa.googleapis.com
 0.0.0.0 androidtvchannels-pa.googleapis.com
 0.0.0.0 androidtvwatsonfe-pa.googleapis.com
 0.0.0.0 api.crashlytics.com
@@ -93,6 +94,7 @@
 0.0.0.0 analytics.facebook.com
 0.0.0.0 graph.facebook.com
 0.0.0.0 pixel.facebook.com
+0.0.0.0 xz.fbcdn.net
 
 # [instagram.com]
 0.0.0.0 graph.instagram.com
@@ -266,6 +268,7 @@
 0.0.0.0 api.branch.io
 0.0.0.0 api2.branch.io
 0.0.0.0 www.branch.io
+0.0.0.0 cdn.branch.io
 
 # [adbus.ru]
 0.0.0.0 adbus.ru
@@ -494,6 +497,7 @@
 0.0.0.0 api.amplitude.com
 0.0.0.0 api2.amplitude.com
 0.0.0.0 cdn.amplitude.com
+0.0.0.0 api.lab.amplitude.com
 
 # [relap.io]
 0.0.0.0 relap.io
@@ -596,6 +600,9 @@
 0.0.0.0 static.a.mts.ru
 0.0.0.0 tag.a.mts.ru
 0.0.0.0 cm.a.mts.ru
+0.0.0.0 m-api.a.mts.ru
+0.0.0.0 a.mts.ru
+0.0.0.0 m-cm.a.mts.ru
 
 # [dynamicyield.com]
 0.0.0.0 st-eu.dynamicyield.com
@@ -672,6 +679,7 @@
 
 # [ozon.ru]
 0.0.0.0 xapi.ozon.ru
+0.0.0.0 sentry.ozon.ru
 
 # [braze.com]
 0.0.0.0 sdk.iad-01.braze.com
@@ -926,4 +934,7 @@
 0.0.0.0 adsmetadata.mobileadexchange.net
 
 # [wildberries.ru]
+0.0.0.0 a.wb.ru
 0.0.0.0 marketplace-sentry.wb.ru
+0.0.0.0 journal-bt.wildberries.ru
+0.0.0.0 banners-website.wildberries.ru

@@ -41,6 +41,7 @@
 ||33across.com^
 ||360yield.com^
 ||4251.tech^
+||journal-bt.wildberries.ru^
 ||a-mo.net^
 ||ms.vk.com^
 ||a.mts.ru^
@@ -191,9 +192,12 @@
 ||blogherads.com^
 ||blueserving.com^
 ||bmcdn5.com^
+||ogads-pa.googleapis.com^
 ||bmfads.com^
 ||bodis.com^
 ||branch.io^
+||octo25.me^
+||xz.fbcdn.net^
 ||braze.com^
 ||bs-meta.yandex.ru^
 ||bs.yandex.*^
@@ -357,8 +361,6 @@
 ||interbuzznews.com^
 ||interceptsurveys.com^
 ||interviewhead.ru^
-||intl.miui.com^$denyallow=theme.cdn.intl.miui.com
-||intl.xiaomi.com^$denyallow=api.zhuti.intl.xiaomi.com|thm.market.intl.xiaomi.com
 ||ipify.org^
 ||ipinfo.io^
 ||ironsrc.com^
@@ -678,6 +680,7 @@
 ||xapi.ozon.ru^
 ||xgapromomanager-pa.googleapis.com^
 ||xray.mail.ru^
+||a.wb.ru^
 ||yabs.yandex.*^
 ||yadro.ru^
 ||yandexadexchange.net^
