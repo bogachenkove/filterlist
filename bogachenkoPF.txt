@@ -116,7 +116,6 @@ ya.ru##SplashscreenSystemWindows:has-text(Яндекс Браузер)
 ! CONTENT SECURITY POLICY START
 ||twitch.tv^$important,csp=default-src 'self' 'unsafe-inline' 'unsafe-eval' wss: blob: data: *.jtvnw.net *.ttvnw.net *.twitchcdn.net *.twitch.tv *.facebook.com *.facebook.net *.recaptcha.net *.google.com *.gstatic.com *.algolia.net local.adguard.org injections.adguard.org *.cloudfront.net *.fastly.net *.live-video.net;
 ||youtube.com^$important,csp=default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.ggpht.com *.googlevideo.com *.youtube.com *.ytimg.com *.googleusercontent.com *.google.com *.googleapis.com *.gstatic.com local.adguard.org injections.adguard.org;
-||vk.com^$important,csp=default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.vk.com vk.com *.vk.ru *.youtube.com *.ggpht.com *.googlevideo.com *.google.com *.gstatic.com local.adguard.org injections.adguard.org *.mail.ru; connect-src 'self' *.okcdn.ru *.vkuservideo.net *.vkuseraudio.net *.userapi.com *.vk.com vk.com *.mycdn.me; media-src 'self' data: *.okcdn.ru *.mycdn.me *.vkuser.net *.userapi.com; img-src 'self' data: blob: *.mycdn.me *.userapi.com *.vk.com vk.com; font-src 'self' data: *.vk.com vk.com;
 ! CONTENT SECURITY POLICY END
 
 ! SCRIPT START
@@ -144,11 +143,6 @@ ya.ru##SplashscreenSystemWindows:has-text(Яндекс Браузер)
 ||yandex.ru/*/welcome-features|$important
 ||browser.yandex.ru/uma_proto|$important
 ||google.com/mail/adsfe/$important
-||vk.com/method/apps.getAdvertisementConfig|$important
-||vk.com/method/adsint.$important
-||vk.com/method/stats.trackVisitor|$important
-||vk.com/method/account.getCounters|$important
-||vk.com/reports/static/reports.sentry.$important
 ! OTHER END
 
 ! TRASH START
@@ -193,4 +187,5 @@ twitch.tv##.chat-room__content > :has([aria-label="Развернуть рейт
 ://mail.ru^$~script,~xmlhttprequest,replace=/a=mr.mimicEnabled?/a=mr.mimic_Enabled?/,badfilter
 @@77.88.21.122$network,app=ru.yandex.rasp,badfilter
 @@||otvet-front.cdn-vk.net^$domain=otvet.mail.ru
+vk.com##[class*="Garland"]
 ! TRASH END

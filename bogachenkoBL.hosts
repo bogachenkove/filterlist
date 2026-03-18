@@ -9,6 +9,9 @@
 0.0.0.0 ade.googlesyndication.com
 0.0.0.0 ads.google.com
 0.0.0.0 ads.youtube.com
+0.0.0.0 mail-ads.google.com
+0.0.0.0 ssl-google-analytics.l.google.com
+0.0.0.0 www-google-analytics.l.google.com
 0.0.0.0 adservice.google.com
 0.0.0.0 ogads-pa.googleapis.com
 0.0.0.0 androidtvchannels-pa.googleapis.com
@@ -59,6 +62,7 @@
 0.0.0.0 pubads.g.doubleclick.net
 0.0.0.0 fundingchoicesmessages.google.com
 0.0.0.0 xgapromomanager-pa.googleapis.com
+0.0.0.0 ogads-pa.clients6.google.com
 
 # [whatsapp.com]
 0.0.0.0 dit.whatsapp.net
@@ -152,11 +156,14 @@
 # [yandex.ru]
 0.0.0.0 startup.appmetrica.yango.com
 0.0.0.0 appmetrica.yango.com
+0.0.0.0 mc.yango.com
 0.0.0.0 statchecker.yandex.ru
 0.0.0.0 abt.s3.yandex.net
 0.0.0.0 adfstat.yandex.ru
 0.0.0.0 adsdk.yandex.ru
 0.0.0.0 amc.yandex.ru
+0.0.0.0 metrika.yandex.ru
+0.0.0.0 advertising.yandex.ru
 0.0.0.0 an.yandex.ru
 0.0.0.0 analytics.mobile.yandex.net
 0.0.0.0 appmetrica.yandex.com
@@ -165,9 +172,11 @@
 0.0.0.0 informer.yandex.ru
 0.0.0.0 log.strm.yandex.ru
 0.0.0.0 mc.yandex.ru
+0.0.0.0 mc.yandex.com
 0.0.0.0 mobile.yandexadexchange.net
 0.0.0.0 redirect.appmetrica.yandex.com
 0.0.0.0 report.appmetrica.yandex.net
+0.0.0.0 tracking.appmetrica.yandex.net
 0.0.0.0 rosenberg.appmetrica.yandex.net
 0.0.0.0 startup-mobile.ap.yandex-net.ru
 0.0.0.0 startup-mobile.yandex.net
@@ -191,6 +200,7 @@
 0.0.0.0 webvisor.com
 0.0.0.0 media-adv.market.yandex.ru
 0.0.0.0 app.uaas.yandex.ru
+0.0.0.0 uaas.yandex.ru
 0.0.0.0 media-adv.vs.market.yandex.net
 0.0.0.0 market-click-baobab.yandex.ru
 0.0.0.0 events.plus.yandex.net
@@ -198,6 +208,13 @@
 0.0.0.0 browser-updater.yandex.net
 0.0.0.0 banners.mobile.yandex.net
 0.0.0.0 banners-slb.mobile.yandex.net
+0.0.0.0 offerwall.yandex.net
+0.0.0.0 easy-monetization.s3.yandex.net
+0.0.0.0 static-mon.yandex.net
+0.0.0.0 adfox.yandex.ru
+0.0.0.0 matchid.adfox.yandex.ru
+0.0.0.0 matchid-production.adfox.yandex.ru
+0.0.0.0 market-baobab.yandex.ru
 
 # [my.com]
 0.0.0.0 eu.tracker-api.my.com
@@ -213,6 +230,7 @@
 0.0.0.0 ts.tracker-api.my.com
 
 # [appsflyer.com]
+0.0.0.0 reqhfg-launches.appsflyersdk.com
 0.0.0.0 h5l6mc-inapps.appsflyersdk.com
 0.0.0.0 zk3ts5-launches.appsflyersdk.com
 0.0.0.0 h5l6mc-cdn-settings.appsflyersdk.com
@@ -263,6 +281,7 @@
 0.0.0.0 ih4bsf-cdn-settings.appsflyersdk.com
 0.0.0.0 b90zwg-cdn-settings.appsflyersdk.com
 0.0.0.0 websdk.appsflyer.com
+0.0.0.0 snr8ad-cdn-settings.appsflyersdk.com
 
 # [branch.io]
 0.0.0.0 api.branch.io
@@ -938,3 +957,12 @@
 0.0.0.0 marketplace-sentry.wb.ru
 0.0.0.0 journal-bt.wildberries.ru
 0.0.0.0 banners-website.wildberries.ru
+
+# [tiktok.com]
+0.0.0.0 analytics.us.tiktok.com
+
+# [cabconnect.org]
+0.0.0.0 mobile-metrica.cabconnect.org
+
+# [taxiaid.org]
+0.0.0.0 taxiaid.org
