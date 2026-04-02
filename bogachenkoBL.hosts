@@ -99,6 +99,7 @@
 0.0.0.0 graph.facebook.com
 0.0.0.0 pixel.facebook.com
 0.0.0.0 xz.fbcdn.net
+0.0.0.0 graph.fbpigeon.com
 
 # [instagram.com]
 0.0.0.0 graph.instagram.com
@@ -966,3 +967,16 @@
 
 # [taxiaid.org]
 0.0.0.0 taxiaid.org
+
+# [sberbank.ru]
+0.0.0.0 mpsbol.clickstream.sberbank.ru
+
+# [magnit.ru]
+0.0.0.0 promo-images.prod.ya.magnit.ru
+0.0.0.0 sentry-mobile.prod.ya.magnit.ru
+
+# [taobao.com]
+0.0.0.0 accscdn.m.taobao.com
+
+# [dixy.ru]
+0.0.0.0 loyalty-sentry.dixy.ru
