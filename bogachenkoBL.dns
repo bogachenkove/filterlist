@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/bogachenko/filterlist/
 ! License: https://raw.githubusercontent.com/bogachenko/filterlist/main/LICENSE.md
 
-/^(.+[_.-])?ad[vsx]?(er(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?[_.-]/
+/^(.+[_.-])?ad[vsx]?(er(v?e?)?t?i?((si)?ng|(se)?r?(ment)?)?)?([\d]+)?[_.-]/
 /^(.+[_.-])?ajx?[1-9]{3,4}\.(bid|online|xyz)$/
 /^(.+[_.-])?analytics?([\d]+)?[_.-]/
 /^(.+[_.-])?bann?ers?([\d]+)?[_.-]/
@@ -37,8 +37,10 @@
 ||pubserv.pro^
 ||singular.net^
 ||pixel.facebook.com^
+||stmtag.ru^
 ||tenjin.io^
 ||kochava.com^
+||sbermarketing.ru^
 ||datadoghq.com^
 ||mpsbol.clickstream.sberbank.ru^
 ||accscdn.m.taobao.com^
@@ -115,6 +117,7 @@
 ||adsrv.net^
 ||adsrvr.org^
 ||adsterra.com^
+||adtrafficquality.google^
 ||adswizz.com^
 ||adsyndication.msn.com^
 ||adtago.s3.amazonaws.com^
@@ -277,12 +280,14 @@
 ||diagnostics.office.com^
 ||diginetica.net^
 ||digitalcaramel.com^
+||market-baobab.yandex.ru^
 ||digitaltarget.ru^
 ||displayvertising.com^
 ||districtm.net^
 ||dit.whatsapp.net^
 ||dlsdk.appsflyersdk.com^
 ||doubleclick.net^
+||visor.sberbank.ru^
 ||doubleclickbygoogle.com^
 ||doublepimp.com^
 ||doubleverify.com^
