@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/bogachenko/filterlist/
 ! License: https://raw.githubusercontent.com/bogachenko/filterlist/main/LICENSE.md
 
-/^(.+[_.-])?ad[vsx]?(er(v?e?)?t?i?((si)?ng|(se)?r?(ment)?)?)?([\d]+)?[_.-]/
+/^(.+[_.-])?ad[vsx]?(er(v?e?)?t?i?((si)?ng|([sc]es?)?r?(ment)?)?)?([\d]+)?[_.-]/
 /^(.+[_.-])?ajx?[1-9]{3,4}\.(bid|online|xyz)$/
 /^(.+[_.-])?analytics?([\d]+)?[_.-]/
 /^(.+[_.-])?bann?ers?([\d]+)?[_.-]/
@@ -17,6 +17,7 @@
 /^(.+[_.-])?pre-?rolls?([\d]+)?[_.-]/
 /^(.+[_.-])?rekl?(ama?)?([\d]+)?[_.-]/
 /^(.+[_.-])?sentry([\d]+)?[_.-]/
+/^(.+[_.-])?visor([\d]+)?[_.-]/
 /^(.+[_.-])?telemetr(y|ics?)([\d]+)?[_.-]/
 /^(.+[_.-])?v(ast|paid)([\d]+)?[_.-]/
 /^a\.[a-f0-9]{30,60}\.com$/
@@ -488,12 +489,16 @@
 ||notik.me^
 ||nr-data.net^
 ||null^
+||burp^
+||zap^
 ||o333o.com^
 ||octotracker.com^
 ||octotracking.com^
 ||offerwall.yandex.net^
 ||officeci.azurewebsites.net^
 ||ohsatum.info^
+||bbj3nb.ru^
+||segmel.com^
 ||omtrdc.net^
 ||onelink.me^
 ||onesignal.com^
