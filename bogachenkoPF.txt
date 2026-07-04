@@ -81,7 +81,7 @@ $removeparam=/^utm_/
 /(?<=^|[?/.=_-])rekl?(ama?)?(?=$|[?/.=_-])/
 /(?<=^|[?/.=_-])ad[vsx]?((is)?er?(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?(?=$|[?/.=_-])/$domain=~twitch.tv|~tiktok.com
 /(?<=^|[?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[?/.=_-])/
-/(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/.=_-])/
+/(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/.=_-])/$domain=~cloudflare.com
 /(?<=^|[?/.=_-])counter(?=$|[?/.=_-])/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 ||null^
@@ -111,6 +111,7 @@ $removeparam=/^utm_/
 ##[src^="//ad."]
 youtube.com##.ytp-endscreen-content,.attached-message,.sponsorThumbnailLabel,.ytp-paid-content-overlay,.undefined > yt-button-shape,.ytp-ce-element-show,.ytp-scrubber-container,.ytp-fullscreen-grid
 ya.ru##SplashscreenSystemWindows:has-text(Яндекс Браузер)
+ya.ru##[id*="Distribution"],[class*="Distribution"]
 ! COSMETIC RULES END
 
 ! CONTENT SECURITY POLICY START
