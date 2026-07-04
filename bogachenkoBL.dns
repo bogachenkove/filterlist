@@ -10,7 +10,7 @@
 /^(.+[_.-])?bann?ers?([\d]+)?[_.-]/
 /^(.+[_.-])?beacons?([\d]+)?[_.-]/
 /^(.+[_.-])?counter([\d]+)?[_.-]/
-/^(.+[_.-])?track(e[sr]|ing)?([\d]+)?[_.-]/
+/^(.+[_.-])?tr(ac)?k(e[sr]|ing)?([\d]+)?[_.-]/
 /^(.+[_.-])?crash(es)?([\d]+)?[_.-]/
 /^(.+[_.-])?me?tr[ie]?[ck][asx]?([\d]+)?[_.-]/
 /^(.+[_.-])?n[0-9]{2,4}adserv\.\w+$/
@@ -25,7 +25,7 @@
 /^a\.[a-f0-9]{30,60}\.com$/
 /^pi?x(el)?([\d]+)?[_.-]/
 /^vii[a-z]{3}\.com$/
-/^[syn]metric[as]?[1-3]?\./
+/^[synr]metric[as]?[1-3]?\./
 /^[a-z_-]{3,15}\.[a-f0-9]{32}\.[a-z]{2,3}$/
 /^[ase1-5]{2}\.(torrent|ace)stream\.(info|org|net)$/
 /^[rt]s?[0-3]?\.mail\.ru$/
@@ -36,12 +36,18 @@
 ||agl007.site^
 ||adtarget.market^
 ||agl008.shop^
+||artfut.com^
 ||pubserv.pro^
 ||singular.net^
 ||pixel.facebook.com^
 ||stmtag.ru^
 ||tenjin.io^
+||bonuscake.ru^
+||eventtrace.ru^
+||flomni.com^
+||dspgate.ru^
 ||kochava.com^
+||mb9pzp.ru^
 ||sbermarketing.ru^
 ||datadoghq.com^
 ||mpsbol.clickstream.sberbank.ru^
@@ -672,7 +678,6 @@
 ||trafficmagnet.net^$denyallow=officecdn.trafficmagnet.net
 ||trafmag.com^
 ||trandgid.com^
-||trk.mail.ru^
 ||tronads.io^
 ||trontv.com^
 ||ts.acestream.net^
