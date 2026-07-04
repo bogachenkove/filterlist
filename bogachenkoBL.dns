@@ -9,7 +9,7 @@
 /^(.+[_.-])?rekl?(ama?)?([\d]+)?[_.-]/
 /^(.+[_.-])?promos?(t(ed?|i(ng|ons?)))?([\d]+)?[_.-]/
 /^(.+[_.-])?bann?ers?([\d]+)?[_.-]/
-/^([^_.-]+[_.-])?monetiz(?:e|ation|ing|a[ts]ia)?([\d]+)?[_.-]/
+/^(.+[_.-])?monetiz(?:e|ation|ing|a[ts]ia)?([\d]+)?[_.-]/
 
 # [generic analytics domain regex]
 /^(.+[_.-])?analyt(?:ic[as]?|ical)?([\d]+)?[_.-]/
@@ -17,14 +17,20 @@
 /^(.+[_.-])?track(?:e[sr]|ing)?([\d]+)?[_.-]/
 /^(.+[_.-])?telemetr(?:y|ia|ic[as]?)?([\d]+)?[_.-]/
 /^(.+[_.-])?sentry([\d]+)?[_.-]/
+/^(.+[_.-])?log(?:[sy]|g(?:ers?|ing))?([\d]+)?[_.-]/
 /^pi?x(el)?[_.-]/
 
 # [generic metrics domain regex]
 /^(.+[_.-])?metr(?:i[ck][sa]?|ical)?([\d]+)?[_.-]/
 
+# [generic diagnostics domain regex]
+/^([^_.-]+[_.-])?diagnos(?:is|tics?)?([\d]+)?[_.-]/
+
 # [generic trash domain regex]
 /^a\.[a-f0-9]{30,60}\.com$/
 /^[a-z_-]{3,15}\.[a-f0-9]{32}\.[a-z]{2,3}$/
+/^(.+[_.-])?ajx?[0-9]{3,4}\.(bid|online|xyz)$/
+/^(.+[_.-])?n[0-9]{2,4}adserv\.(com|xyz)$/
 
 # [twitch.tv]
 ||player.stats.live-video.net^
@@ -53,11 +59,37 @@
 ||firebaselogging-pa.googleapis.com^
 ||admob.com^
 ||adtrafficquality.google^
+||www-googleadservices.l.google.com^
+||www-googletagmanager.l.google.com^
+||www-googletagservices.l.google.com^
+||video-stats.l.google.com^
+||static-doubleclick-net.l.google.com^
+||s*-2mdn-net.l.google.com^
+||partnerad.l.google.com^
+||pagead-googlehosted.l.google.com^
+||pagead-tpc.l.google.com^
+||pagead.l.google.com^
+||googleadapis.l.google.com^
+||id.l.google.com^
+||id.google.*^
+||googleadservices-cn.com^
+||googlevads-cn.com^
+||doubleclick-cn.net^
+||google-analytics-cn.com^
+||doubleclick.cn^
+||googletraveladservices-cn.com^
+||googletagmanager-cn.com^
+||googletagservices-cn.com^
+||googlesyndication-cn.com^
+||app-measurement-cn.com^
+||2mdn.net^
 
 # [youtube.com]
+||s.yimg.com^
 ||s.youtube.com^
 
 # [yandex.ru]
+||mc.yandex.com^
 ||mc.yandex.ru^
 ||yabs.yandex.ru^
 ||an.yandex.ru^
@@ -65,7 +97,20 @@
 ||adfstat.yandex.ru^
 ||appmetrica.yandex.com^
 ||yadro.ru^
+||yabs.yandex.ru^
 ||adfstat.yandex.ru^
+||market-baobab.yandex.ru^
+||adsdk.yandex.ru^
+||appmetrica.yandex.com^
+||appmetrica.yandex.net^
+||appmetrica.yandex.ru^
+||appmetrica.yango.com^
+||adfox.yandex.com^
+||adfox.yandex.ru^
+||mads.yandex.ru^
+||webvisor.org^
+||mc.yango.com^
+||offerwall.yandex.net^
 
 # [mail.ru]
 ||mradx.net^
@@ -84,6 +129,7 @@
 ||an.mail.ru^
 
 # [apple.com]
+||iad.apple.com^
 ||iadsdk.apple.com^
 
 # [cdek.ru]
@@ -91,14 +137,31 @@
 
 # [sentry.io]
 ||sentry.io^
+||sentry-cdn.com^
 
 # [avito.ru]
 ||rt.avito.ru^
 
 # [microsoft.com]
+||adnxs.com^
+||bat.bing.com^
+||c.bing.com^
+||data.microsoft.com^
+||data.*.microsoft.com^
 ||monitor.azure.com^
+||graph.microsoft.com^
+||r.msn.com^
+||watson.microsoft.com^
+||watson.*.microsoft.com^
+
+# [facebook.com]
+||graph.facebook.com^
+
+# [instagram.com]
+||graph.instagram.com^
 
 # [acestream.org]
+||r.acestream.net^
 /^[ase1-5]{2}\.(torrent|ace)stream\.(info|org|net)$/
 
 # [appsflyer.com]
@@ -121,6 +184,12 @@
 
 # [adcolony.com]
 ||adcolony.com^
+
+# [adform.net]
+||adform.net^
+
+# [admedia.com]
+||admedia.com^
 
 # [adform.com]
 ||adform.com^
@@ -232,3 +301,39 @@
 
 # [triplelift.com]
 ||triplelift.com^
+
+# [rutarget.ru]
+||rutarget.ru^
+
+# [matomo.org]
+||matomo.org^
+
+# [criteo.com]
+||criteo.com^
+
+# [adriver.ru]
+||adriver.ru^
+
+# [mts.ru]
+||a.mts.ru^
+
+# [juicyads.com]
+||juicyads.com^
+
+# [equativ.com]
+||smartadserver.com^
+||sharethrough.com^
+
+# [mi.com]
+||mistat.*.xiaomi.com^
+||data.*.miui.com^
+||data.miui.com^
+||sec.*.miui.com^
+||sec.miui.com^
+
+# [comscore.com]
+||comscore.com^
+||scorecardresearch.com^
+
+# [opera.com]
+||af.opera.com^
