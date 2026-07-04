@@ -9,6 +9,7 @@
 /^(.+[_.-])?rekl?(ama?)?([\d]+)?[_.-]/
 /^(.+[_.-])?promos?(t(ed?|i(ng|ons?)))?([\d]+)?[_.-]/
 /^(.+[_.-])?bann?ers?([\d]+)?[_.-]/
+/^([^_.-]+[_.-])?monetiz(?:e|ation|ing|a[ts]ia)?([\d]+)?[_.-]/
 
 # [generic analytics domain regex]
 /^(.+[_.-])?analyt(?:ic[as]?|ical)?([\d]+)?[_.-]/
@@ -51,6 +52,7 @@
 ||doubleclick.net^
 ||firebaselogging-pa.googleapis.com^
 ||admob.com^
+||adtrafficquality.google^
 
 # [youtube.com]
 ||s.youtube.com^
@@ -63,6 +65,7 @@
 ||adfstat.yandex.ru^
 ||appmetrica.yandex.com^
 ||yadro.ru^
+||adfstat.yandex.ru^
 
 # [mail.ru]
 ||mradx.net^
@@ -70,6 +73,7 @@
 ||r3.mail.ru^
 ||rs.mail.ru^
 ||r.mail.ru^
+||t.mail.ru^
 ||r0.mail.ru^
 ||r1.mail.ru^
 ||trk.mail.ru^
@@ -126,3 +130,105 @@
 
 # [sberbank.ru]
 ||visor.sberbank.ru^
+||clickstream.sberbank.ru^
+
+# [amplitude.com]
+||amplitude.com^
+
+# [applift.com]
+||applift.com^
+
+# [applovin.com]
+||applovin.com^
+||mopub.com^
+
+# [appnext.com]
+||appnext.com^
+
+# [appodeal.com]
+||appodeal.com^
+
+# [branch.io]
+||branch.io^
+
+# [chartboost.com]
+||chartboost.com^
+
+# [yahoo.com]
+||flurry.com^
+||noa.yahoo.com^
+
+# [taboola.com]
+||taboola.com^
+
+# [fyber.com]
+||fyber.com^
+
+# [hotjar.com]
+||hotjar.com^
+
+# [inmobi.com]
+||inmobi.com^
+||inmobicdn.net^
+
+# [ironsrc.com]
+||ironsrc.com^
+
+# [kochava.com]
+||kochava.com^
+
+# [leadbolt.com]
+||leadbolt.com^
+
+# [liftoff.io]
+||liftoff.io^
+
+# [mintegral.com]
+||mintegral.com^
+
+# [mixpanel.com]
+||mixpanel.com^
+
+# [openx.com]
+||openx.com^
+
+# [propellerads.com]
+||propellerads.com^
+
+# [pubmatic.com]
+||pubmatic.com^
+
+# [rubiconproject.com]
+||rubiconproject.com^
+
+# [twilio.com]
+||segment.com^
+||segment.io^
+
+# [equativ.com]
+||equativ.com^
+||sharethrough.com^
+
+# [verve.com]
+||smaato.com^
+||smaato.net^
+||smadex.com^
+||vervemobile.com^
+||dataseat.com^
+||match2one.com^
+||lkqd.com^
+||jungroup.com^
+||beemray.com^
+||captify.co.uk^
+||captifytechnologies.com^
+
+# [start.io]
+||startappservice.com^
+
+# [unity.com]
+||tapjoy.com^
+||tapjoyads.com^
+||unityads.unity3d.com^
+
+# [triplelift.com]
+||triplelift.com^
