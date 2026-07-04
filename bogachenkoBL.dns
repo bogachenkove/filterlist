@@ -48,11 +48,12 @@
 
 # [google.com]
 ||googlesyndication.com^
-||ogads-pa.clients6.google.com^
+||ogads-pa.*.google.com^
 ||googleadservices.com^
 ||googletagmanager.com^
 ||googleanalytics.com^
 ||crashlytics.com^
+||crashlyticsreports-pa.googleapis.com^
 ||app-measurement.com^
 ||imasdk.googleapis.com^
 ||doubleclick.net^
@@ -92,6 +93,9 @@
 ||mc.yandex.com^
 ||mc.yandex.ru^
 ||yabs.yandex.ru^
+||bs.yandex.ru^
+||bs-meta.yandex.ru^
+||bs.yandex.com^
 ||an.yandex.ru^
 ||adfox.ru^
 ||adfstat.yandex.ru^
@@ -111,6 +115,7 @@
 ||webvisor.org^
 ||mc.yango.com^
 ||offerwall.yandex.net^
+||awaps.yandex.ru^
 
 # [mail.ru]
 ||mradx.net^
@@ -138,6 +143,7 @@
 # [sentry.io]
 ||sentry.io^
 ||sentry-cdn.com^
+||getsentry.com^
 
 # [avito.ru]
 ||rt.avito.ru^
@@ -153,8 +159,10 @@
 ||r.msn.com^
 ||watson.microsoft.com^
 ||watson.*.microsoft.com^
+||wns.windows.com^
 
 # [facebook.com]
+||liverail.com^
 ||graph.facebook.com^
 
 # [instagram.com]
@@ -162,6 +170,7 @@
 
 # [acestream.org]
 ||r.acestream.net^
+||m.acestream.net^
 /^[ase1-5]{2}\.(torrent|ace)stream\.(info|org|net)$/
 
 # [appsflyer.com]
@@ -209,6 +218,7 @@
 
 # [applovin.com]
 ||applovin.com^
+||applvn.com^
 ||mopub.com^
 
 # [appnext.com]
@@ -222,6 +232,49 @@
 
 # [chartboost.com]
 ||chartboost.com^
+
+# [superawesome.com]
+||superawesome.com^
+
+# [airpush.com]
+||airpush.com^
+
+# [thetradedesk.com]
+||adsrvr.org^
+
+# [adup-tech.com]
+||adup-tech.com^
+||aduptech.com^
+
+# [revmob.com]
+||revmob.com^
+
+# [localytics.com]
+||localytics.com^
+
+# [singular.net]
+||singular.net^
+
+# [tenjin.com]
+||tenjin.com^
+
+# [moloco.com]
+||moloco.com^
+
+# [mobilefuse.com]
+||mobilefuse.com^
+
+# [pubnative.net]
+||pubnative.net^
+
+# [tiktok.com]
+||pangle.io^
+
+# [mouseflow.com]
+||mouseflow.com^
+
+# [freshmarketer.com]
+||freshmarketer.com^
 
 # [yahoo.com]
 ||flurry.com^
@@ -246,11 +299,15 @@
 # [kochava.com]
 ||kochava.com^
 
+# [media.net]
+||media.net^
+
 # [leadbolt.com]
 ||leadbolt.com^
 
 # [liftoff.io]
 ||liftoff.io^
+||vungle.com^
 
 # [mintegral.com]
 ||mintegral.com^
@@ -292,6 +349,8 @@
 ||captifytechnologies.com^
 
 # [start.io]
+||start.io^
+||startapp.com^
 ||startappservice.com^
 
 # [unity.com]
@@ -316,6 +375,10 @@
 
 # [mts.ru]
 ||a.mts.ru^
+||rtb.mts.ru^
+
+# [rt.ru]
+||rtb.rt.ru^
 
 # [juicyads.com]
 ||juicyads.com^
@@ -330,6 +393,7 @@
 ||data.miui.com^
 ||sec.*.miui.com^
 ||sec.miui.com^
+||mistat.xiaomi.com^
 
 # [comscore.com]
 ||comscore.com^
@@ -337,3 +401,13 @@
 
 # [opera.com]
 ||af.opera.com^
+
+# [popads.net]
+||popads.net^
+
+# [appboy.com]
+||appboy.com^
+||appboycdn.com^
+
+# [adwolf.ru]
+||adwolf.ru^
