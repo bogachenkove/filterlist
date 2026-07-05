@@ -4,17 +4,5 @@
 ! Homepage: https://github.com/bogachenko/filterlist/
 ! License: https://raw.githubusercontent.com/bogachenko/filterlist/main/LICENSE.md
 
-@@||account.firefox.com^
-@@||account.google.com^
-@@||account.xiaomi.com^
-@@||account.apple.com^
-@@||dns.cloudflare.com^
-@@||dns.google.com^
 @@||injections.adguard.org^
 @@||local.adguard.org^
-@@||login.microsoftonline.com^
-@@||login.windows.net^
-@@||login.yandex.ru^
-@@||loginex.microsoftonline.com^
-@@||oauth.yandex.*^
-@@||passport.yandex.*^

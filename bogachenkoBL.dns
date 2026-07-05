@@ -22,9 +22,10 @@
 
 # [generic metrics domain regex]
 /^(.+[_.-])?metr(?:i[ck][sa]?|ical)?([\d]+)?[_.-]/
+/^[a-z]{1,3}metric[as][_.-]/
 
 # [generic diagnostics domain regex]
-/^([^_.-]+[_.-])?diagnos(?:is|tics?)?([\d]+)?[_.-]/
+/^([^_.-]+[_.-])?diagnos(?:is|ti[ck][sa]?)?([\d]+)?[_.-]/
 
 # [generic trash domain regex]
 /^a\.[a-f0-9]{30,60}\.com$/
@@ -32,34 +33,55 @@
 /^(.+[_.-])?ajx?[0-9]{3,4}\.(bid|online|xyz)$/
 /^(.+[_.-])?n[0-9]{2,4}adserv\.(com|xyz)$/
 
-# [twitch.tv]
+# [amazon.com]
+||amazon-adsystem.com^
+||adtago.s3.amazonaws.com^
+||affiliationjs.s3.amazonaws.com^
+||spade.twitch.tv^
 ||player.stats.live-video.net^
 
 # [vk.com]
-||vk-portal.net^
 ||ms.vk.com^
 ||ms.vk.ru^
-||trace-flow.ru^
+||vk-portal.net^
 ||apptracer.ru^
-
-# [whatsapp.com]
-||dit.whatsapp.net^
-||crashlogs.whatsapp.net^
+||trace-flow.ru^
+||mradx.net^
+||radar.imgsmail.ru^
+||top-fwz1.mail.ru^
+||r3.mail.ru^
+||rs.mail.ru^
+||r.mail.ru^
+||t.mail.ru^
+||r0.mail.ru^
+||r1.mail.ru^
+||trk.mail.ru^
+||xray.mail.ru^
+||pulse.mail.ru^
+||b2.mail.ru^
+||an.mail.ru^
 
 # [google.com]
-||googlesyndication.com^
-||ogads-pa.*.google.com^
-||googleadservices.com^
-||googletagmanager.com^
-||googleanalytics.com^
-||crashlytics.com^
-||crashlyticsreports-pa.googleapis.com^
-||app-measurement.com^
-||imasdk.googleapis.com^
 ||doubleclick.net^
-||firebaselogging-pa.googleapis.com^
+||doubleclick-cn.net^
+||doubleclick.cn^
 ||admob.com^
-||adtrafficquality.google^
+||2mdn.net^
+||app-measurement.com^
+||app-measurement-cn.com^
+||googlesyndication.com^
+||googlesyndication-cn.com^
+||googleadservices.com^
+||googleadservices-cn.com^
+||googletagmanager.com^
+||googletagmanager-cn.com^
+||googletagservices.com^
+||googletagservices-cn.com^
+||crashlyticsreports-pa.googleapis.com^
+||imasdk.googleapis.com^
+||firebaselogging-pa.googleapis.com^
+||crashlytics.com^
+||ogads-pa.*.google.com^
 ||www-googleadservices.l.google.com^
 ||www-googletagmanager.l.google.com^
 ||www-googletagservices.l.google.com^
@@ -73,20 +95,11 @@
 ||googleadapis.l.google.com^
 ||id.l.google.com^
 ||id.google.*^
-||googleadservices-cn.com^
 ||googlevads-cn.com^
-||doubleclick-cn.net^
-||google-analytics-cn.com^
-||doubleclick.cn^
 ||googletraveladservices-cn.com^
-||googletagmanager-cn.com^
-||googletagservices-cn.com^
-||googlesyndication-cn.com^
-||app-measurement-cn.com^
-||2mdn.net^
-
-# [youtube.com]
-||s.yimg.com^
+||adtrafficquality.google^
+||androidtvchannels-pa.googleapis.com^
+||androidtvwatsonfe-pa.googleapis.com^
 ||s.youtube.com^
 
 # [yandex.ru]
@@ -97,41 +110,22 @@
 ||bs-meta.yandex.ru^
 ||bs.yandex.com^
 ||an.yandex.ru^
-||adfox.ru^
 ||adfstat.yandex.ru^
-||appmetrica.yandex.com^
-||yadro.ru^
 ||yabs.yandex.ru^
 ||adfstat.yandex.ru^
 ||market-baobab.yandex.ru^
 ||adsdk.yandex.ru^
-||appmetrica.yandex.com^
-||appmetrica.yandex.net^
-||appmetrica.yandex.ru^
-||appmetrica.yango.com^
 ||adfox.yandex.com^
 ||adfox.yandex.ru^
 ||mads.yandex.ru^
-||webvisor.org^
-||mc.yango.com^
 ||offerwall.yandex.net^
 ||awaps.yandex.ru^
+||webvisor.org^
+||adfox.ru^
+||mc.yango.com^
 
-# [mail.ru]
-||mradx.net^
-||top-fwz1.mail.ru^
-||r3.mail.ru^
-||rs.mail.ru^
-||r.mail.ru^
-||t.mail.ru^
-||r0.mail.ru^
-||r1.mail.ru^
-||trk.mail.ru^
-||xray.mail.ru^
-||radar.imgsmail.ru^
-||pulse.mail.ru^
-||b2.mail.ru^
-||an.mail.ru^
+# [liveinternet.ru]
+||yadro.ru^
 
 # [apple.com]
 ||iad.apple.com^
@@ -148,30 +142,99 @@
 # [avito.ru]
 ||rt.avito.ru^
 
-# [microsoft.com]
+# [adnxs.com]
 ||adnxs.com^
+
+# [bing.com]
 ||bat.bing.com^
 ||c.bing.com^
+
+# [msn.com]
+||r.msn.com^
+
+# [microsoft.com]
 ||data.microsoft.com^
 ||data.*.microsoft.com^
-||monitor.azure.com^
 ||graph.microsoft.com^
-||r.msn.com^
 ||watson.microsoft.com^
 ||watson.*.microsoft.com^
 ||wns.windows.com^
+||monitor.azure.com^
+||dc-int.services.visualstudio.com^
+||dc.services.visualstudio.com^
 
-# [facebook.com]
-||liverail.com^
+# [meta.com]
+||an.facebook.com^
 ||graph.facebook.com^
-
-# [instagram.com]
+||dit.whatsapp.net^
+||crashlogs.whatsapp.net^
+||liverail.com^
 ||graph.instagram.com^
 
-# [acestream.org]
-||r.acestream.net^
+# [acestream.net]
 ||m.acestream.net^
-/^[ase1-5]{2}\.(torrent|ace)stream\.(info|org|net)$/
+||a1.acestream.net^
+||a2.acestream.net^
+||a3.acestream.net^
+||a4.acestream.net^
+||a5.acestream.net^
+||e1.acestream.net^
+||e2.acestream.net^
+||e3.acestream.net^
+||e4.acestream.net^
+||e5.acestream.net^
+||r.acestream.net^
+||s1.acestream.net^
+||s2.acestream.net^
+||s3.acestream.net^
+||s4.acestream.net^
+||s5.acestream.net^
+||ts.acestream.net^
+||a1.torrentstream.info^
+||a1.torrentstream.net^
+||a1.torrentstream.org^
+||a2.torrentstream.info^
+||a2.torrentstream.net^
+||a2.torrentstream.org^
+||a3.torrentstream.info^
+||a3.torrentstream.net^
+||a3.torrentstream.org^
+||a4.torrentstream.info^
+||a4.torrentstream.net^
+||a4.torrentstream.org^
+||a5.torrentstream.info^
+||a5.torrentstream.net^
+||a5.torrentstream.org^
+||e1.torrentstream.info^
+||e1.torrentstream.net^
+||e1.torrentstream.org^
+||e2.torrentstream.info^
+||e2.torrentstream.net^
+||e2.torrentstream.org^
+||e3.torrentstream.info^
+||e3.torrentstream.net^
+||e3.torrentstream.org^
+||e4.torrentstream.info^
+||e4.torrentstream.net^
+||e4.torrentstream.org^
+||e5.torrentstream.info^
+||e5.torrentstream.net^
+||e5.torrentstream.org^
+||s1.torrentstream.info^
+||s1.torrentstream.net^
+||s1.torrentstream.org^
+||s2.torrentstream.info^
+||s2.torrentstream.net^
+||s2.torrentstream.org^
+||s3.torrentstream.info^
+||s3.torrentstream.net^
+||s3.torrentstream.org^
+||s4.torrentstream.info^
+||s4.torrentstream.net^
+||s4.torrentstream.org^
+||s5.torrentstream.info^
+||s5.torrentstream.net^
+||s5.torrentstream.org^
 
 # [appsflyer.com]
 ||appsflyer.com^
@@ -239,7 +302,7 @@
 # [airpush.com]
 ||airpush.com^
 
-# [thetradedesk.com]
+# [adsrvr.org]
 ||adsrvr.org^
 
 # [adup-tech.com]
@@ -267,7 +330,7 @@
 # [pubnative.net]
 ||pubnative.net^
 
-# [tiktok.com]
+# [pangle.io]
 ||pangle.io^
 
 # [mouseflow.com]
@@ -277,8 +340,11 @@
 ||freshmarketer.com^
 
 # [yahoo.com]
-||flurry.com^
+!||s.yimg.com^
 ||noa.yahoo.com^
+
+# [flurry.com]
+||flurry.com^
 
 # [taboola.com]
 ||taboola.com^
@@ -305,7 +371,7 @@
 # [leadbolt.com]
 ||leadbolt.com^
 
-# [liftoff.io]
+# [vungle.com]
 ||liftoff.io^
 ||vungle.com^
 
@@ -327,13 +393,9 @@
 # [rubiconproject.com]
 ||rubiconproject.com^
 
-# [twilio.com]
+# [segment.com]
 ||segment.com^
 ||segment.io^
-
-# [equativ.com]
-||equativ.com^
-||sharethrough.com^
 
 # [verve.com]
 ||smaato.com^
@@ -376,6 +438,8 @@
 # [mts.ru]
 ||a.mts.ru^
 ||rtb.mts.ru^
+||mtsopros.mts.ru^
+||buzzoola.com^
 
 # [rt.ru]
 ||rtb.rt.ru^
@@ -384,6 +448,7 @@
 ||juicyads.com^
 
 # [equativ.com]
+||equativ.com^
 ||smartadserver.com^
 ||sharethrough.com^
 
@@ -411,3 +476,26 @@
 
 # [adwolf.ru]
 ||adwolf.ru^
+
+# [samsung.com]
+||samsungadhub.com^
+||samsungads.com^
+
+# [targetads.io]
+||targetads.io^
+
+# [bytedance.com]
+||mcs-va.tiktokv.com^
+
+# [taximaxim.ru]
+||analyticstransfer.taximaxim.ru^
+
+# [sonicsads.com]
+||sonicsads.com^
+
+# [maxesads.com]
+||maxesads.com^
+||maxesads.ru^
+
+# [uxfeedback.ru]
+||uxfeedback.ru^
