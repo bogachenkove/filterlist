@@ -39,6 +39,7 @@
 ||affiliationjs.s3.amazonaws.com^
 ||spade.twitch.tv^
 ||player.stats.live-video.net^
+||serving-sys.com^
 
 # [vk.com]
 ||ms.vk.com^
@@ -123,6 +124,7 @@
 ||webvisor.org^
 ||adfox.ru^
 ||mc.yango.com^
+||adwolf.ru^
 
 # [liveinternet.ru]
 ||yadro.ru^
@@ -142,17 +144,11 @@
 # [avito.ru]
 ||rt.avito.ru^
 
-# [adnxs.com]
+# [microsoft.com]
 ||adnxs.com^
-
-# [bing.com]
+||r.msn.com^
 ||bat.bing.com^
 ||c.bing.com^
-
-# [msn.com]
-||r.msn.com^
-
-# [microsoft.com]
 ||data.microsoft.com^
 ||data.*.microsoft.com^
 ||graph.microsoft.com^
@@ -172,7 +168,6 @@
 ||graph.instagram.com^
 
 # [acestream.net]
-||m.acestream.net^
 ||a1.acestream.net^
 ||a2.acestream.net^
 ||a3.acestream.net^
@@ -183,7 +178,6 @@
 ||e3.acestream.net^
 ||e4.acestream.net^
 ||e5.acestream.net^
-||r.acestream.net^
 ||s1.acestream.net^
 ||s2.acestream.net^
 ||s3.acestream.net^
@@ -340,7 +334,6 @@
 ||freshmarketer.com^
 
 # [yahoo.com]
-!||s.yimg.com^
 ||noa.yahoo.com^
 
 # [flurry.com]
@@ -470,12 +463,10 @@
 # [popads.net]
 ||popads.net^
 
-# [appboy.com]
+# [braze.com]
+||braze.com^
 ||appboy.com^
 ||appboycdn.com^
-
-# [adwolf.ru]
-||adwolf.ru^
 
 # [samsung.com]
 ||samsungadhub.com^
@@ -499,3 +490,7 @@
 
 # [uxfeedback.ru]
 ||uxfeedback.ru^
+
+# [trafficjunky.com]
+||trafficjunky.com^
+||trafficjunky.net^
