@@ -111,7 +111,6 @@
 ||bs-meta.yandex.ru^
 ||bs.yandex.com^
 ||an.yandex.ru^
-||adfstat.yandex.ru^
 ||yabs.yandex.ru^
 ||adfstat.yandex.ru^
 ||market-baobab.yandex.ru^
@@ -122,9 +121,13 @@
 ||offerwall.yandex.net^
 ||awaps.yandex.ru^
 ||webvisor.org^
+||webvisor.com^
 ||adfox.ru^
 ||mc.yango.com^
 ||adwolf.ru^
+||startup.mobile.yandex.net^
+||startup-mobile.ap.yandex-net.ru^
+||abt.s3.yandex.net^
 
 # [liveinternet.ru]
 ||yadro.ru^
@@ -233,6 +236,7 @@
 # [appsflyer.com]
 ||appsflyer.com^
 ||appsflyersdk.com^
+||onelink.me^
 
 # [adjust.com]
 ||adjust.com^
@@ -494,3 +498,9 @@
 # [trafficjunky.com]
 ||trafficjunky.com^
 ||trafficjunky.net^
+
+# [lg.com]
+||lgsmartad.com^
+
+# [perzonalization.com]
+||perzonalization.com^
