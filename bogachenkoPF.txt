@@ -56,6 +56,7 @@ $removeparam=/^utm_/
 ||kaspersky-labs.com^$important
 ||kaspersky.com^$important
 ||jivo.ru^$important
+||smartscreen.microsoft.com^$important
 ! DOMAINS END
 
 ! WHITELIST START

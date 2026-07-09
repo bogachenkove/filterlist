@@ -22,10 +22,10 @@
 
 # [generic metrics domain regex]
 /^(.+[_.-])?metr(?:i[ck][sa]?|ical)?([\d]+)?[_.-]/
-/^[a-z]{1,3}metric[as][_.-]/
+/^(.+[_.-])?[a-z]{1,3}metric[as][_.-]/
 
 # [generic diagnostics domain regex]
-/^([^_.-]+[_.-])?diagnos(?:is|ti[ck][sa]?)?([\d]+)?[_.-]/
+/^(.+[_.-])?diagnos(?:is|ti[ck][sa]?)?([\d]+)?[_.-]/
 
 # [generic trash domain regex]
 /^a\.[a-f0-9]{30,60}\.com$/
@@ -73,11 +73,13 @@
 ||googlesyndication.com^
 ||googlesyndication-cn.com^
 ||googleadservices.com^
+||googleanalytics.com^
 ||googleadservices-cn.com^
 ||googletagmanager.com^
 ||googletagmanager-cn.com^
 ||googletagservices.com^
 ||googletagservices-cn.com^
+||firebaselogging.googleapis.com^
 ||crashlyticsreports-pa.googleapis.com^
 ||imasdk.googleapis.com^
 ||firebaselogging-pa.googleapis.com^
@@ -154,21 +156,20 @@
 ||c.bing.com^
 ||data.microsoft.com^
 ||data.*.microsoft.com^
-||graph.microsoft.com^
 ||watson.microsoft.com^
 ||watson.*.microsoft.com^
 ||wns.windows.com^
 ||monitor.azure.com^
 ||dc-int.services.visualstudio.com^
 ||dc.services.visualstudio.com^
+||prod-collecticon.outlookmobile.com^
+||pipe.aria.microsoft.com^
 
 # [meta.com]
 ||an.facebook.com^
-||graph.facebook.com^
 ||dit.whatsapp.net^
 ||crashlogs.whatsapp.net^
 ||liverail.com^
-||graph.instagram.com^
 
 # [acestream.net]
 ||a1.acestream.net^
@@ -504,3 +505,58 @@
 
 # [perzonalization.com]
 ||perzonalization.com^
+
+# [datadoghq.com]
+||browser-intake-datadoghq.com^
+
+# [news-cdn.site]
+||news-cdn.site^
+
+# [brave.com]
+||referrals.brave.com^
+
+# [rainberry.com]
+||bench.utorrent.com^
+
+# [admitlead.com]
+||admitlead.ru^
+||admitlead.com^
+
+# [objectile.ru]
+||objectile.ru^
+
+# [opencandy.com]
+||opencandy.com^
+
+# [mybrowserbar.com]
+||mybrowserbar.com^
+
+# [alibabagroup.com]
+||h-adashx4ae.ut.taobao.com^
+||mmstat.com^
+||fourier.aliexpress.com^
+||fourier.taobao.com^
+
+# [ebay.com]
+||ebayadservices.com^
+||pulsar.ebay.com^
+
+# [adviad.com]
+||adviad.com^
+
+# [airship.com]
+||device-api.urbanairship.com^
+
+# [magsrv.com]
+||magsrv.com^
+
+# [eeyeful.cn]
+||eeyeful.cn^
+||eeyeful.com^
+
+# [honor.com]
+||mediametria-*.hihonorcdn.com^
+
+# [mintegral.com]
+||mintegral.com^
+||mtgglobals.com^
