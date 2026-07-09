@@ -80,6 +80,7 @@
 ||googletagservices.com^
 ||googletagservices-cn.com^
 ||firebaselogging.googleapis.com^
+||firebaselogging.googleapis.com^
 ||crashlyticsreports-pa.googleapis.com^
 ||imasdk.googleapis.com^
 ||firebaselogging-pa.googleapis.com^
@@ -417,6 +418,9 @@
 ||tapjoy.com^
 ||tapjoyads.com^
 ||unityads.unity3d.com^
+||config.uca.cloud.unity3d.com^
+||cdp.cloud.unity3d.com^
+||o-sdk.mediation.unity3d.com^
 
 # [triplelift.com]
 ||triplelift.com^
@@ -560,3 +564,11 @@
 # [mintegral.com]
 ||mintegral.com^
 ||mtgglobals.com^
+||rayjump.com^
+
+# [bidmachine.io]
+||bidmachine.io^
+
+# [voodoo.io]
+||crosspromo.voodoo.io^
+||api-gdpr.voodoo-tech.io^
