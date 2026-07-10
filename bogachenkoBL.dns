@@ -35,6 +35,8 @@
 /^(.+[_.-])?n[0-9]{2,4}adserv\.(com|xyz)$/
 
 # [amazon.com]
+||aax-eu.amazon.com^
+||unagi-na.amazon.com^
 ||amazon-adsystem.com^
 ||adtago.s3.amazonaws.com^
 ||affiliationjs.s3.amazonaws.com^
@@ -166,6 +168,7 @@
 ||dc.services.visualstudio.com^
 ||prod-collecticon.outlookmobile.com^
 ||pipe.aria.microsoft.com^
+||clarity.ms^
 
 # [meta.com]
 ||an.facebook.com^
@@ -341,6 +344,9 @@
 ||freshmarketer.com^
 
 # [yahoo.com]
+||partnerads.ysm.yahoo.com^
+||adtech.yahooinc.com^
+||udcm.yahoo.com^
 ||noa.yahoo.com^
 
 # [flurry.com]
@@ -486,6 +492,7 @@
 ||targetads.io^
 
 # [bytedance.com]
+||business-api.tiktok.com^
 ||mcs-va.tiktokv.com^
 
 # [taximaxim.ru]
@@ -591,14 +598,34 @@
 # [tganalytics.xyz]
 ||tganalytics.xyz^
 
+# [histats.com]
+||histats.com^
+
+# [cloudflare.com]
+||cloudflareinsights.com^
+
 # [myangular.life]
 ||myangular.life^
 
-# [s2517.com]
-||s2517.com^
+# [bugsnag.com]
+||bugsnag.com^
 
-# [tazaromikaz.link]
-||tazaromikaz.link^
+# [hotjar.com]
+||hotjar.com^
+||hotjar.io^
 
-# [rstprgapipt.com]
-||rstprgapipt.com^
+# [raygun.com]
+||raygun.io^
+||raygun.com^
+
+# [honeybadger.io]
+||honeybadger.io^
+
+# [logrocket.io]
+||logrocket.io^
+
+# [airbrake.io]
+||airbrake.io^
+
+# [rollbar.com]
+||rollbar.com^
