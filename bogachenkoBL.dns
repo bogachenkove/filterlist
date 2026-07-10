@@ -10,10 +10,11 @@
 /^(.+[_.-])?promos?(t(ed?|i(ng|ons?)))?([\d]+)?[_.-]/
 /^(.+[_.-])?bann?ers?([\d]+)?[_.-]/
 /^(.+[_.-])?monetiz(?:e|ation|ing|a[ts]ia)?([\d]+)?[_.-]/
+/^(.+[_.-])?v(ast|paid)([\d]+)?[_.-]/
 
 # [generic analytics domain regex]
 /^(.+[_.-])?analyt(?:ic[as]?|ical)?([\d]+)?[_.-]/
-/^(.+[_.-])?counter([\d]+)?[_.-]/
+/^(.+[_.-])?count(ers?)?([\d]+)?[_.-]/
 /^(.+[_.-])?track(?:e[sr]|ing)?([\d]+)?[_.-]/
 /^(.+[_.-])?telemetr(?:y|ia|ic[as]?)?([\d]+)?[_.-]/
 /^(.+[_.-])?sentry([\d]+)?[_.-]/
@@ -559,7 +560,11 @@
 ||eeyeful.com^
 
 # [honor.com]
+||apm-ru.yun.hihonor.com^
 ||mediametria-*.hihonorcdn.com^
+
+# [huawei.com]
+||uba.huaweicloud.com^
 
 # [mintegral.com]
 ||mintegral.com^
@@ -572,3 +577,28 @@
 # [voodoo.io]
 ||crosspromo.voodoo.io^
 ||api-gdpr.voodoo-tech.io^
+
+# [videoroll.net]
+||videoroll.net^
+
+# [giga.pub]
+||giga.pub^
+||gigapub.tech^
+
+# [tads.me]
+||tads.me^
+
+# [tganalytics.xyz]
+||tganalytics.xyz^
+
+# [myangular.life]
+||myangular.life^
+
+# [s2517.com]
+||s2517.com^
+
+# [tazaromikaz.link]
+||tazaromikaz.link^
+
+# [rstprgapipt.com]
+||rstprgapipt.com^
