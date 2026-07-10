@@ -18,7 +18,7 @@
 /^(.+[_.-])?track(?:e[sr]|ing)?([\d]+)?[_.-]/
 /^(.+[_.-])?telemetr(?:y|ia|ic[as]?)?([\d]+)?[_.-]/
 /^(.+[_.-])?sentry([\d]+)?[_.-]/
-/^(.+[_.-])?log(?:[sy]|g(?:ers?|ing))?([\d]+)?[_.-]/
+/^(.+[_.-])?log(?:[syx]|g(?:ers?|ing))?([\d]+)?[_.-]/
 /^pi?x(el)?[_.-]/
 
 # [generic metrics domain regex]
@@ -40,6 +40,7 @@
 ||amazon-adsystem.com^
 ||adtago.s3.amazonaws.com^
 ||affiliationjs.s3.amazonaws.com^
+||adtechvideo.s3.amazonaws.com^
 ||spade.twitch.tv^
 ||player.stats.live-video.net^
 ||serving-sys.com^
@@ -279,6 +280,7 @@
 ||adsterra.com^
 
 # [sberbank.ru]
+||stmtag.ru^
 ||visor.sberbank.ru^
 ||clickstream.sberbank.ru^
 
@@ -678,7 +680,9 @@
 # [siteplug.com]
 ||siteplug.com^
 
-# [luxupnetwork.com]
+# [luxup.ru]
+||luxup.ru^
+||luxupnetwork.com^
 ||luxcdn.com^
 
 # [ttarget.ru]
@@ -708,11 +712,12 @@
 # [admatic.com.tr]
 ||admatic.com.tr^
 
-# [demdex.net]
+# [adobe.com]
+||2o7.net^
 ||demdex.net^
 
 # [rakuten.com]
-||rmp.rakuten.com^
+||rakuten.com^
 
 # [rtbwave.com]
 ||rtbwave.com^
@@ -759,14 +764,13 @@
 # [adhigh.net]
 ||adhigh.net^
 
-# [bidderstack.com]
-||bidderstack.com^
-
 # [whiteboxdigital.ru]
 ||whiteboxdigital.ru^
 
 # [targetrtb.com]
 ||targetrtb.com^
+
+# [onetarget.ru]
 ||onetarget.ru^
 
 # [360yield.com]
@@ -793,5 +797,12 @@
 # [hybrid.ai]
 ||hybrid.ai^
 
-# [ifedata.ru]
-||ifedata.ru^
+# [roistat.com]
+||roistat.com^
+
+# [luckyorange.com]
+||luckyorange.com^
+||luckyorange.net^
+
+# [adservings.ru]
+||adservings.ru^
