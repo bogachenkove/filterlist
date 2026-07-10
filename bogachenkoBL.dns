@@ -43,6 +43,7 @@
 ||spade.twitch.tv^
 ||player.stats.live-video.net^
 ||serving-sys.com^
+||serving-sys.ru^
 
 # [vk.com]
 ||ms.vk.com^
@@ -64,6 +65,7 @@
 ||pulse.mail.ru^
 ||b2.mail.ru^
 ||an.mail.ru^
+||media-advcycle.imgsmail.ru^
 
 # [google.com]
 ||doubleclick.net^
@@ -171,6 +173,7 @@
 ||prod-collecticon.outlookmobile.com^
 ||pipe.aria.microsoft.com^
 ||clarity.ms^
+||appcenter.ms^
 
 # [meta.com]
 ||an.facebook.com^
@@ -425,10 +428,11 @@
 # [unity.com]
 ||tapjoy.com^
 ||tapjoyads.com^
+||iads.unity3d.com^
 ||unityads.unity3d.com^
-||config.uca.cloud.unity3d.com^
+||uca.cloud.unity3d.com^
 ||cdp.cloud.unity3d.com^
-||o-sdk.mediation.unity3d.com^
+||mediation.unity3d.com^
 
 # [triplelift.com]
 ||triplelift.com^
@@ -476,6 +480,8 @@
 
 # [opera.com]
 ||af.opera.com^
+||6chcdn.com^
+||mykonf.com^
 
 # [popads.net]
 ||popads.net^
@@ -581,10 +587,10 @@
 ||mtgglobals.com^
 ||rayjump.com^
 
-# [bidmachine.io]
+# [bidmachine.com]
+||bidmachine.com^
 ||bidmachine.io^
-
-# [everestop.io]
+||blueduckredapple.com^
 ||everestop.io^
 
 # [voisetech.com]
@@ -668,3 +674,124 @@
 
 # [bbj3nb.ru]
 ||bbj3nb.ru^
+
+# [siteplug.com]
+||siteplug.com^
+
+# [luxupnetwork.com]
+||luxcdn.com^
+
+# [ttarget.ru]
+||ttarget.ru^
+
+# [prodmp.ru]
+||prodmp.ru^
+
+# [adspector.io]
+||adspector.io^
+
+# [acint.net]
+||acint.net^
+
+# [betweendigital.com]
+||betweendigital.com^
+
+# [silvermob.com]
+||silvermob.com^
+
+# [bidderstack.com]
+||bidderstack.com^
+
+# [arcspire.io]
+||arcspire.io^
+
+# [admatic.com.tr]
+||admatic.com.tr^
+
+# [demdex.net]
+||demdex.net^
+
+# [rakuten.com]
+||rmp.rakuten.com^
+
+# [rtbwave.com]
+||rtbwave.com^
+
+# [inner-active.mobi]
+||inner-active.mobi^
+
+# [aidata.io]
+||aidata.io^
+
+# [smartcallback.ru]
+||smartcallback.ru^
+
+# [upravel.com]
+||upravel.com^
+
+# [bumlam.com]
+||bumlam.com^
+
+# [adspend.space]
+||adspend.space^
+
+# [al-adtech.com]
+||al-adtech.com^
+
+# [linkssp.ru]
+||linkssp.ru^
+
+# [shopnetic.com]
+||shopnetic.com^
+
+# [uuidksinc.net]
+||uuidksinc.net^
+
+# [dynotech.io]
+||dynotech.io^
+
+# [intent.ai]
+||intent.ai^
+
+# [admon.pro]
+||admon.pro^
+
+# [adhigh.net]
+||adhigh.net^
+
+# [bidderstack.com]
+||bidderstack.com^
+
+# [whiteboxdigital.ru]
+||whiteboxdigital.ru^
+
+# [targetrtb.com]
+||targetrtb.com^
+||onetarget.ru^
+
+# [360yield.com]
+||360yield.com^
+
+# [new-programmatic.com]
+||new-programmatic.com^
+
+# [kimberlite.io]
+||kimberlite.io^
+
+# [myweb3id.io]
+||myweb3id.io^
+
+# [mpartner.digital]
+||mpartner.digital^
+
+# [sape.ru]
+||sape.ru^
+
+# [digitaltarget.ru]
+||digitaltarget.ru^
+
+# [hybrid.ai]
+||hybrid.ai^
+
+# [ifedata.ru]
+||ifedata.ru^
