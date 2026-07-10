@@ -152,6 +152,7 @@
 
 # [avito.ru]
 ||rt.avito.ru^
+||stats.avito.ru^
 
 # [microsoft.com]
 ||adnxs.com^
@@ -335,9 +336,6 @@
 # [pubnative.net]
 ||pubnative.net^
 
-# [pangle.io]
-||pangle.io^
-
 # [mouseflow.com]
 ||mouseflow.com^
 
@@ -384,6 +382,7 @@
 
 # [mintegral.com]
 ||mintegral.com^
+||mintegral.net^
 
 # [mixpanel.com]
 ||mixpanel.com^
@@ -493,6 +492,8 @@
 ||targetads.io^
 
 # [bytedance.com]
+||tiktokpangle.us^
+||pangle.io^
 ||business-api.tiktok.com^
 ||mcs-va.tiktokv.com^
 
@@ -642,3 +643,6 @@
 ||whitei.net^
 ||weborama.fr^
 ||weborama-tech.ru^
+
+# [pendo.io]
+||pendo.io^
