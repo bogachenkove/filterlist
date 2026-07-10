@@ -83,7 +83,6 @@
 ||googletagservices.com^
 ||googletagservices-cn.com^
 ||firebaselogging.googleapis.com^
-||firebaselogging.googleapis.com^
 ||crashlyticsreports-pa.googleapis.com^
 ||imasdk.googleapis.com^
 ||firebaselogging-pa.googleapis.com^
@@ -108,6 +107,7 @@
 ||androidtvchannels-pa.googleapis.com^
 ||androidtvwatsonfe-pa.googleapis.com^
 ||s.youtube.com^
+||mediation.goog^
 
 # [yandex.ru]
 ||mc.yandex.com^
@@ -115,6 +115,7 @@
 ||yabs.yandex.ru^
 ||bs.yandex.ru^
 ||bs-meta.yandex.ru^
+||bs-metadsp.yandex.ru^
 ||bs.yandex.com^
 ||an.yandex.ru^
 ||yabs.yandex.ru^
@@ -646,3 +647,24 @@
 
 # [pendo.io]
 ||pendo.io^
+
+# [wildberries.ru]
+||marketing-info.wildberries.ru^
+||personal-clusters.wildberries.ru^
+||journal-bt.wildberries.ru^
+
+# [adplay.ru]
+||adplay.ru^
+
+# [beeline.ru]
+||rtb.beeline.ru^
+
+# [adrun.ru]
+||adrun.ru^
+
+# [alfabank.ru]
+||diginetica.net^
+||flocktory.com^
+
+# [bbj3nb.ru]
+||bbj3nb.ru^
