@@ -327,6 +327,7 @@
 
 # [moloco.com]
 ||moloco.com^
+||adsmoloco.com^
 
 # [mobilefuse.com]
 ||mobilefuse.com^
@@ -581,6 +582,12 @@
 # [bidmachine.io]
 ||bidmachine.io^
 
+# [everestop.io]
+||everestop.io^
+
+# [voisetech.com]
+||voisetech.com^
+
 # [voodoo.io]
 ||crosspromo.voodoo.io^
 ||api-gdpr.voodoo-tech.io^
@@ -629,3 +636,9 @@
 
 # [rollbar.com]
 ||rollbar.com^
+
+# [weborama.com]
+||weborama.com^
+||whitei.net^
+||weborama.fr^
+||weborama-tech.ru^
