@@ -16,12 +16,12 @@
 # [generic analytics domain rules]
 /^(?:.*?[_.-])?analyt(?:ic[as]?|ical)?\d*(?:[_.-]|$)/
 /^(?:.*?[_.-])?count(ers?)?\d*(?:[_.-]|$)/
-/^(?:.*?[_.-])?track(?:e[sr]|ing)?\d*(?:[_.-]|$)/
+/^(?:.*?[_.-])?tra?ck(?:e[sr]|ing)?\d*(?:[_.-]|$)/
 /^(?:.*?[_.-])?telemetr(?:y|ia|ic[as]?)?\d*(?:[_.-]|$)/
 /^(?:.*?[_.-])?sentry\d*(?:[_.-]|$)/
 /^(?:.*?[_.-])?log(?:[syx]|g(?:ers?|ing))?\d*(?:[_.-]|$)/
 /^(?:.*?[_.-])?logser(?:v(?:ices?|ers?|ing|e)?|s)?\d*(?:[_.-]|$)/
-/^pi?x(el)?[_.-]/
+/^pi?x(el)?\d*[_.-]/
 /^trk[_.-]/
 /^rtb[_.-]/
 
@@ -884,3 +884,8 @@
 # [leiniao.com]
 ||hwads-o.api.leiniao.com^
 ||on-euads-o.api.leiniao.com^
+
+# [rutube.ru]
+||ac.rutube.ru^
+||goya.rutube.ru^
+||a.rutube.ru^
