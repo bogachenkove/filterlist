@@ -22,6 +22,8 @@
 /^(?:.*?[_.-])?log(?:[syx]|g(?:ers?|ing))?\d*(?:[_.-]|$)/
 /^(?:.*?[_.-])?logser(?:v(?:ices?|ers?|ing|e)?|s)?\d*(?:[_.-]|$)/
 /^pi?x(el)?[_.-]/
+/^trk[_.-]/
+/^rtb[_.-]/
 
 # [generic metrics domain rules]
 /^(?:.*?[_.-])?metr(?:i[ck][sa]?|ical)?\d*(?:[_.-]|$)/
@@ -142,6 +144,8 @@
 ||startup.mobile.yandex.net^
 ||startup-mobile.ap.yandex-net.ru^
 ||abt.s3.yandex.net^
+||amc.yandex.ru^
+||uaas.yandex.ru^
 
 # [liveinternet.ru]
 ||yadro.ru^
@@ -572,6 +576,7 @@
 ||adviad.com^
 
 # [airship.com]
+||aswpsdkus.com^
 ||device-api.urbanairship.com^
 
 # [magsrv.com]
@@ -586,6 +591,7 @@
 ||mediametria-*.hihonorcdn.com^
 
 # [huawei.com]
+||logbak.hicloud.com^
 ||uba.huaweicloud.com^
 
 # [mintegral.com]
@@ -717,6 +723,8 @@
 ||admatic.com.tr^
 
 # [adobe.com]
+||demdex.net^
+||omtrdc.net^
 ||2o7.net^
 ||demdex.net^
 
@@ -810,3 +818,69 @@
 
 # [adservings.ru]
 ||adservings.ru^
+
+# [oppo.com]
+||adsfs.oppomobile.com^
+
+# [reddit.com]
+||events.redditmedia.com^
+||events.reddit.com^
+
+# [pub.network]
+||pub.network^
+
+# [ipsos.com]
+||dotmetrics.net^
+
+# [akamai.com]
+||go-mpulse.net^
+
+# [integralads.com]
+||adsafeprotected.com^
+
+# [pubmatic.com]
+||pubmatic.com^
+
+# [adlightning.com]
+||adlightning.com^
+
+# [telecid.ru]
+||telecid.ru^
+
+# [getads.ru]
+||getads.ru^
+
+# [adl-hunter.com]
+||adl-hunter.com^
+
+# [bridgertb.tech]
+||bridgertb.tech^
+
+# [punchmedia.ru]
+||punchmedia.ru^
+
+# [adsp.io]
+||adsp.io^
+
+# [kvaedit.site]
+||kvaedit.site^
+
+# [suprion.ru]
+||suprion.ru^
+
+# [unicontext.ru]
+||unicontext.ru^
+
+# [traffaret.com]
+||traffaret.com^
+
+# [otm-r.ru]
+||otm-r.ru^
+||otm-r.com^
+
+# [statsig.com]
+||api.statsig.com^
+
+# [leiniao.com]
+||hwads-o.api.leiniao.com^
+||on-euads-o.api.leiniao.com^
