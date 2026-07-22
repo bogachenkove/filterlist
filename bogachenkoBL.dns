@@ -118,6 +118,7 @@
 ||androidtvwatsonfe-pa.googleapis.com^
 ||s.youtube.com^
 ||mediation.goog^
+||xgapromomanager-pa.googleapis.com^
 
 # [yandex.ru]
 ||mc.yandex.com^
@@ -478,12 +479,15 @@
 ||sharethrough.com^
 
 # [mi.com]
-||mistat.*.xiaomi.com^
-||data.*.miui.com^
-||data.miui.com^
-||sec.*.miui.com^
-||sec.miui.com^
 ||mistat.xiaomi.com^
+||mistat.*.xiaomi.com^
+||data.miui.com^
+||data.*.miui.com^
+||sec.miui.com^
+||sec.*.miui.com^
+||jupiter.*.sys.miui.com^
+||sa.api.*.miui.com^
+||sa.tv.*.mi.com^
 
 # [comscore.com]
 ||comscore.com^
@@ -514,6 +518,8 @@
 ||pangle.io^
 ||business-api.tiktok.com^
 ||mcs-va.tiktokv.com^
+||mon-*.tiktokv.com^
+||mon.tiktokv.com^
 
 # [taximaxim.ru]
 ||analyticstransfer.taximaxim.ru^
@@ -625,6 +631,9 @@
 
 # [tganalytics.xyz]
 ||tganalytics.xyz^
+
+# [adsgram.ai]
+||adsgram.ai^
 
 # [histats.com]
 ||histats.com^
@@ -887,9 +896,9 @@
 ||on-euads-o.api.leiniao.com^
 
 # [rutube.ru]
+||a.rutube.ru^
 ||ac.rutube.ru^
 ||goya.rutube.ru^
-||a.rutube.ru^
 
 # [sorrybizzy.xyz]
 ||sorrybizzy.xyz^
