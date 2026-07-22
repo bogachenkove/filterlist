@@ -11,6 +11,7 @@
 /^(?:.*?[_.-])?promos?(t(ed?|i(ng|ons?)))?\d*(?:[_.-]|$)/
 /^(?:.*?[_.-])?bann?ers?\d*(?:[_.-]|$)/
 /^(?:.*?[_.-])?monetiz(?:e|ation|ing|a[ts]ia)?\d*(?:[_.-]|$)/
+/^(?:.*?[_.-])?preroll\d*(?:[_.-]|$)/
 /^v(ast|paid)[_.-]/
 
 # [generic analytics domain rules]
@@ -889,3 +890,12 @@
 ||ac.rutube.ru^
 ||goya.rutube.ru^
 ||a.rutube.ru^
+
+# [sorrybizzy.xyz]
+||sorrybizzy.xyz^
+
+# [zanapredoaxent.xyz]
+||zanapredoaxent.xyz^
+
+# [fontmenice.com]
+||fontmenice.com^

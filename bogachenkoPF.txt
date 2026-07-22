@@ -80,9 +80,9 @@ $removeparam=/^utm_/
 ! BASIC FILTERS START
 /(?=(?:.*?&(manufacturer|model|platform|(device|partner|referrer|app|client)[-_]?id|uuid|ver(sion)?|name)=){3,})/
 /(?<=^|[?/.=_-])rekl?(ama?)?(?=$|[?/.=_-])/
-/(?<=^|[?/.=_-])ad[vsx]?((is)?er?(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?(?=$|[?/.=_-])/$domain=~twitch.tv|~tiktok.com|~aliexpress.ru
+/(?<=^|[?/.=_-])ad[vsx]?((is)?er?(v?e?)?t?i?((si)?ng|ser?(ment)?)?)?(?=$|[?/.=_-])/$domain=~twitch.tv|~tiktok.com|~aliexpress.ru|~reddit.com|~instagram.com
 /(?<=^|[?/.=_-])me?tr[ie]?[ck][asx]?(?=$|[?/.=_-])/
-/(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/.=_-])/$domain=~cloudflare.com|~flightradar24.com
+/(?<=^|[?/.=_-])log(ger|s)?(?=$|[?/.=_-])/$domain=~cloudflare.com|~flightradar24.com|~reddit.com
 /(?<=^|[?/.=_-])counter(?=$|[?/.=_-])/
 /\/(gen(erate)?|client|log|stream|device|player|live|csi|error)_?204/
 ||null^
@@ -91,7 +91,7 @@ $removeparam=/^utm_/
 ||sentry.
 |http*:*?sentry_key=
 |http*:*?sentry_version=
-|http*:*?payload=
+|http*:*?payload=$domain=~krea.ai
 |http*:*/prerolls.
 |http*:*/adtech-
 |http*:*/pagead/
@@ -104,7 +104,7 @@ $removeparam=/^utm_/
 ! APP END
 
 ! IMAGES START
-/(?<=^|[&?/.=_-])pi?x(el)?s?(?=$|[&?/.=_-])/$image
+/(?<=^|[&?/.=_-])pi?x(el)?s?(?=$|[&?/.=_-])/$image,domain=~pornhub.com
 ! IMAGES END
 
 ! COSMETIC RULES START
@@ -122,8 +122,7 @@ ya.ru##[id*="Distribution"],[class*="Distribution"]
 
 ! SCRIPT START
 |http*:*/endscreen.js$script,domain=youtube.com|youtu.be|youtube-nocookie.com
-||2ch.org/static/js/events/snow_miner_anon_ne_podozrevaet.js$script
-||2ch.org/static/js/events/SleepingBusinessman.js$script
+||google.com/gsi/$script
 ! SCRIPT END
 
 ! REPLACE START
@@ -148,17 +147,6 @@ ya.ru##[id*="Distribution"],[class*="Distribution"]
 ! OTHER END
 
 ! TRASH START
-@@|http*:*?payload=$domain=krea.ai
-@@_ad=$3p,image,domain=instagram.com
-@@_logger.$1p,script,domain=bybit.com
-@@/ads-$3p,script,domain=reddit.com
-@@/ads-$3p,script,domain=reddit.com
-@@-ad-$3p,script,domain=reddit.com
-@@/ad-$3p,script,domain=reddit.com
-@@-log-$3p,script,domain=reddit.com
-@@||api.2gis.ru/*/suggests?key=$xhr
-@@||api.2gis.ru/*/items?key=$xhr
-@@||api.2gis.ru/*/items/byid?id=$xhr
 ||lucky-gift.org^
 ||tel1mekar.com^
 ||xuv.etherscan.com^
@@ -181,6 +169,7 @@ spotify.com##div.ReactModalPortal
 twitch.tv##[class*="bits-leaderboard"],[class*="channel-leaderboard-header"]
 twitch.tv##.chat-room__content > :has([aria-label="Развернуть рейтинг лучших дарителей в верхней части чата"])
 ||2ch.hk/static/js/events/chikatilo.js$script
+||2ch.org/static/js/events/SleepingBusinessman.js$script
 ||2ch.hk/static/js/events/snow_miner_anon_ne_podozrevaet.js$script
 ||yastatic.net/share$script
 ||yandex.ru/ads/$important
@@ -188,6 +177,5 @@ twitch.tv##.chat-room__content > :has([aria-label="Развернуть рейт
 ||mail.ru^$~script,~xmlhttprequest,replace=/broker:/_broker:/,badfilter
 ://mail.ru^$~script,~xmlhttprequest,replace=/a=mr.mimicEnabled?/a=mr.mimic_Enabled?/,badfilter
 @@77.88.21.122$network,app=ru.yandex.rasp,badfilter
-@@||otvet-front.cdn-vk.net^$domain=otvet.mail.ru
 vk.com##[class*="Garland"]
 ! TRASH END
